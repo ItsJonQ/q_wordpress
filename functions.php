@@ -5,6 +5,9 @@
  * @package _s
  */
 
+// Class - Q_ (Main)
+    require_once('lib/classes/class.q_.php');
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
