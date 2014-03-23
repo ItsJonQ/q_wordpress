@@ -1,12 +1,13 @@
 <?php
 /**
- * The Header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="content">
- *
- * @package _s
- */
-?><!DOCTYPE html>
+* The Header for our theme.
+*
+* Displays all of the <head> section and everything up till <div id="content">
+*
+* @package _s
+*/
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -21,18 +22,19 @@
 <body <?php body_class(); ?>>
     <div id="page" class="hfeed site">
 
-      <header id="masthead" class="site-header" role="banner">
-        <div class="site-branding">
-          <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-          <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-      </div>
+        <header id="masthead" class="site-header" role="banner">
+            <div class="site-branding">
+                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+            </div>
 
-      <nav id="site-navigation" class="main-navigation" role="navigation">
-          <h1 class="menu-toggle"><?php _e( 'Menu', '_s' ); ?></h1>
-          <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <h1 class="menu-toggle"><?php _e( 'Menu', '_s' ); ?></h1>
+                <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
 
-          <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-      </nav><!-- #site-navigation -->
-  </header><!-- #masthead -->
+                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            </nav>
+        </header>
+        <!-- / #masthead -->
 
-  <div id="content" class="site-content">
+        <div id="content" class="site-content">
