@@ -11,6 +11,14 @@
         background-color: $q-color-main;
         color: $font-color-white;
 
+        .section-header {
+            color: $font-color-white;
+        }
+
+        .section-title {
+            color: $font-color-white;
+        }
+
         a {
             color: $font-color-white;
             text-decoration: underline;
@@ -23,7 +31,6 @@
 
     .container {
         display: table-cell;
-        text-align: center;
         vertical-align: middle;
         width: 100%;
     }
