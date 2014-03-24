@@ -5,10 +5,19 @@
     height: 32em;
     width: 100%;
 
-    // Shaded: Background is using the main Q color instead of white
-    &.shaded {
+    // Colored: Background is using the main Q color instead of white
+    &.colored {
         background-color: $q-color-main;
         color: $font-color-white;
+
+        a {
+            color: $font-color-white;
+            text-decoration: underline;
+
+            &:hover {
+                background: darken($q-color-main, 6);
+            }
+        }
     }
 
     .container {

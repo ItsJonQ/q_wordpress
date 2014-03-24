@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <!-- Section: Hello -->
-<section id="section-hello" class="featurette section shaded hello">
+<section id="section-hello" class="featurette section colored hello">
 
     <div class="container">
 

@@ -7,6 +7,12 @@ html body {
   font-family: "Oxygen", "Helvetica Neue", "Helvetica", "Arial";
   font-weight: 400;
 }
+html a {
+  color: #666666;
+}
+html a:hover {
+  color: #757575;
+}
 
 .col-solo {
   float: none;
@@ -28,9 +34,16 @@ html body {
   height: 32em;
   width: 100%;
 }
-.featurette.shaded {
+.featurette.colored {
   background-color: #3b9ca5;
   color: #eeeeee;
+}
+.featurette.colored a {
+  color: #eeeeee;
+  text-decoration: underline;
+}
+.featurette.colored a:hover {
+  background: #33878e;
 }
 .featurette .container {
   display: table-cell;

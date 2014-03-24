@@ -7,4 +7,12 @@ html {
         font-family: $font-family-base;
         font-weight: $font-weight-base;
     }
+
+    a {
+        color: $font-color-main;
+
+        &:hover {
+            color: lighten($font-color-main, 6);
+        }
+    }
 }
