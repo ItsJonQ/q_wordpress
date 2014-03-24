@@ -8,8 +8,19 @@ html body {
   font-weight: 400;
 }
 
+.col-solo {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .site-header {
   display: none;
+}
+
+.section .section-title {
+  font-weight: 700;
+  text-align: center;
 }
 
 .featurette {
@@ -27,7 +38,10 @@ html body {
   vertical-align: middle;
   width: 100%;
 }
-.featurette.hello .headline {
+.featurette .headline {
   font-size: 56px;
   font-weight: 300;
+}
+.featurette .sub-headline {
+  line-height: 1.4em;
 }

@@ -18,13 +18,18 @@
         width: 100%;
     }
 
+    // Headers / Headlines
+    .headline {
+        font-size: 56px;
+        font-weight: $font-weight-light;
+    }
+
+    .sub-headline {
+        line-height: 1.4em;
+    }
+
     // Section: Hello
     &.hello {
-
-        .headline {
-            font-size: 56px;
-            font-weight: $font-weight-light;
-        }
 
     }
 

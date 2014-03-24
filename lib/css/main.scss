@@ -5,9 +5,14 @@
 @import 'partials/base';
 
 
+// Structure
+@import 'partials/structure';
+
+
 // Navigation
 @import 'partials/navigation/navigation_header';
 
 
 // Sections
+@import 'partials/sections/section_base';
 @import 'partials/sections/section_featurette';
