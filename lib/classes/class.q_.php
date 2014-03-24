@@ -36,10 +36,10 @@ if(!class_exists('q_')) {
             wp_register_style( 'bootstrap', $vendor . 'css/bootstrap.min.css', array(), null);
 
             // Main
-            wp_register_style( 'q-main-css', $oublic . 'css/main.css', array('bootstrap'), null);
+            wp_register_style( 'q-main', $public . 'css/main.css', array('bootstrap'), null);
 
             wp_enqueue_style( 'bootstrap' );
-            wp_enqueue_style( 'q-main-css' );
+            wp_enqueue_style( 'q-main' );
 
         }
 

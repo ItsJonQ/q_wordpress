@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <!-- Section: Hello -->
-<section id="section-hello">
+<section id="section-hello" class="featurette">
 
     <div class="container">
 
