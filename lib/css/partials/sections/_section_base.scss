@@ -1,9 +1,16 @@
 // Template: Section (Base)
 
 .section {
+    padding: $gutter 0;
+
+    .section-header {
+        margin-top: 0;
+        margin-bottom: $gutter-half;
+    }
 
     .section-title {
         font-weight: $font-weight-bold;
+        margin-top: 0;
         text-align: center;
     }
 

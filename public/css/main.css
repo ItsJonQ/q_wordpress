@@ -24,8 +24,16 @@ html a:hover {
   display: none;
 }
 
+.section {
+  padding: 30px 0;
+}
+.section .section-header {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
 .section .section-title {
   font-weight: 700;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -57,4 +65,13 @@ html a:hover {
 }
 .featurette .sub-headline {
   line-height: 1.4em;
+}
+
+.chunk {
+  padding: 15px;
+}
+.chunk.shaded {
+  background: #f5f5f5;
+  padding-left: 30px;
+  padding-right: 30px;
 }

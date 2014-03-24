@@ -1,0 +1,11 @@
+// Template: Section (Chunk)
+
+.chunk {
+    padding: $gutter-half;
+
+    &.shaded {
+        background: #f5f5f5;
+        padding-left: $gutter;
+        padding-right: $gutter;
+    }
+}
