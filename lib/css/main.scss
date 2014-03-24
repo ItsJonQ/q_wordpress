@@ -1,3 +1,13 @@
+// Template: Main
+
 // Init Imports
 @import 'modules/base';
 @import 'partials/base';
+
+
+// Navigation
+@import 'partials/navigation/navigation_header';
+
+
+// Sections
+@import 'partials/sections/section_featurette';

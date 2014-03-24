@@ -1,3 +1,16 @@
-.featurette {
-  position: relative;
+html body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #666666;
+}
+
+.site-header {
+  display: none;
+}
+
+.featurette.shaded {
+  background-color: #3b9ca5;
+  color: #eeeeee;
 }

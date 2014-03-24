@@ -1,0 +1,8 @@
+// Template: Base
+
+html {
+    body {
+        @include font-smoothing;
+        color: $font-color-main;
+    }
+}

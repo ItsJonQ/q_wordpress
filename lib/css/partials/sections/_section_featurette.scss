@@ -1,0 +1,10 @@
+// Template: Featurette Section
+
+.featurette {
+
+    &.shaded {
+        background-color: $q-color-main;
+        color: $font-color-white;
+    }
+
+}
