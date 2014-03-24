@@ -36,6 +36,7 @@ html a:hover {
 .section .section-title {
   font-weight: 700;
   margin-top: 0;
+  margin-bottom: 30px;
   text-align: center;
 }
 
