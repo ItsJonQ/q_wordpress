@@ -7,6 +7,8 @@ if(!class_exists('q_')) {
 
         public static function init() {
 
+            add_action( 'wp_head' , array( 'q_', 'header_custom_fonts' ) );
+
             add_action( 'wp_head' , array( 'q_', 'header_meta_viewport' ) );
 
         }
@@ -14,6 +16,15 @@ if(!class_exists('q_')) {
         // fn: Header - Meta Viewport
         public static function header_meta_viewport() {
             echo "\n" . '<meta name="viewport" content="width=device-width, initial-scale=1">' . "\n\n";
+        }
+
+
+        // fn: Header - Custom Fonts
+        public static function header_custom_fonts() {
+            // Oxygen Webfont - Google Web Fonts
+            $oxygen = "<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>";
+
+            // echo $oxygen;
         }
 
         // fn: Header - Custom Scripts

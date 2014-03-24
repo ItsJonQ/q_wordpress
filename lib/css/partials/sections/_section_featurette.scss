@@ -1,10 +1,31 @@
 // Template: Featurette Section
 
 .featurette {
+    display: table;
+    height: 32em;
+    width: 100%;
 
+    // Shaded: Background is using the main Q color instead of white
     &.shaded {
         background-color: $q-color-main;
         color: $font-color-white;
+    }
+
+    .container {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    // Section: Hello
+    &.hello {
+
+        .headline {
+            font-size: 56px;
+            font-weight: $font-weight-light;
+        }
+
     }
 
 }

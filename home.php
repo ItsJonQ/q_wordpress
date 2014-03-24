@@ -8,11 +8,11 @@
 get_header(); ?>
 
 <!-- Section: Hello -->
-<section id="section-hello" class="featurette shaded">
+<section id="section-hello" class="featurette shaded hello">
 
     <div class="container">
 
-        Hello
+        <h2 class="headline"><strong>Hello</strong>. I'm Q!</h2>
 
     </div>
 

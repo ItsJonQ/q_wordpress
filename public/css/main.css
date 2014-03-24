@@ -4,13 +4,30 @@ html body {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   color: #666666;
+  font-family: "Oxygen", "Helvetica Neue", "Helvetica", "Arial";
+  font-weight: 400;
 }
 
 .site-header {
   display: none;
 }
 
+.featurette {
+  display: table;
+  height: 32em;
+  width: 100%;
+}
 .featurette.shaded {
   background-color: #3b9ca5;
   color: #eeeeee;
+}
+.featurette .container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+.featurette.hello .headline {
+  font-size: 56px;
+  font-weight: 300;
 }

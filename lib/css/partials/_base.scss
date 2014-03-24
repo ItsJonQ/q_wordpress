@@ -4,5 +4,7 @@ html {
     body {
         @include font-smoothing;
         color: $font-color-main;
+        font-family: $font-family-base;
+        font-weight: $font-weight-base;
     }
 }

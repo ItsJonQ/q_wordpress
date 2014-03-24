@@ -1,2 +1,11 @@
 // Template: Typography
 
+// Font Familiy
+$font-family-sans-serif:            'Oxygen', 'Helvetica Neue', 'Helvetica', 'Arial' !default;
+$font-family-base:                  $font-family-sans-serif !default;
+
+
+// Font Weights
+$font-weight-base:                  400 !default;
+$font-weight-light:                 300 !default;
+$font-weight-bold:                  700 !default;
