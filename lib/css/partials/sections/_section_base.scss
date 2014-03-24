@@ -1,18 +1,25 @@
 // Template: Section (Base)
 
 .section {
+    border-bottom: 1px solid $border-color-main;
     padding: $gutter 0;
 
     .section-header {
+        color: $font-color-dark;
         margin-top: 0;
         margin-bottom: $gutter-half;
     }
 
     .section-title {
+        color: $font-color-dark;
         font-weight: $font-weight-bold;
         margin-top: 0;
-        margin-bottom: $gutter;
+        margin-bottom: $gutter-half;
         text-align: center;
+    }
+
+    .row {
+        margin: $gutter-half;
     }
 
 }

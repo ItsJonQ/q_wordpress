@@ -33,6 +33,7 @@ get_header(); ?>
         <h2 class="section-title">Section Title</h2>
 
         <div class="row">
+
             <div class="col-md-4 chunk">
                 <h3 class="text-center section-header">Sub-Section Title</h3>
                 <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
@@ -47,10 +48,57 @@ get_header(); ?>
                 <h3 class="text-center section-header">Sub-Section Title</h3>
                 <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
             </div>
+
         </div>
 
     </div>
 
 </section>
+
+<!-- Section: Test -->
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">Section Title</h2>
+
+        <div class="row">
+
+            <div class="col-md-8 chunk col-solo">
+                <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Section: Test -->
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">Section Title</h2>
+
+        <div class="row">
+
+            <div class="col-md-6 chunk">
+                <h3 class="text-center section-header">Sub-Section Title</h3>
+                <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
+            </div>
+
+            <div class="col-md-6 chunk">
+                <h3 class="text-center section-header">Sub-Section Title</h3>
+                <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 
 <?php get_footer(); ?>
