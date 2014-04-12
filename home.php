@@ -1,125 +1,44 @@
 <?php
 /**
- * Template: Homepage
+ * Home
+ * @template
  *
  * @package q_
  */
 
 get_header(); ?>
 
-<!-- Section: Hello -->
-<section id="section-hello" class="featurette section colored hello text-center">
+<!-- Main Container -->
+<div class="container">
+    <div class="row">
 
-    <div class="container">
+        <!-- Post List Container -->
+        <section class="col-md-8 col-solo" id="post-list">
 
-        <div class="col-md-8 col-solo">
+        <?php
+        /**
+         * Getting the posts
+         */
+        if ( have_posts() ) :
+            // Looping through the posts
+            while ( have_posts() ) {
+                // Defining the post info
+                the_post();
+                // Loading up the content template
+                get_template_part( 'templates/content/content', 'post' );
+            }
 
-            <h2 class="headline"><strong>Hello</strong>. I'm Q!</h2>
-            <h3 class="sub-headline">I'm a web designer/developer who's really into UI/UX, simplicity, and making things <em>pretty</em>.</h3>
+        else :
 
-        </div>
+            /**
+             * No posts!
+             */
 
-    </div>
+        endif; ?>
 
-</section>
-<!-- / #section-hello -->
-
-
-<!-- Section: Test -->
-<section class="section">
-
-    <div class="container">
-
-        <h2 class="section-title">Section Title</h2>
-
-        <div class="row">
-
-            <div class="col-md-4 chunk">
-                <h3 class="text-center section-header">Sub-Section Title</h3>
-                <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
-            </div>
-
-            <div class="col-md-4 chunk shaded">
-                <h3 class="text-center section-header">Sub-Section Title</h3>
-                <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
-            </div>
-
-            <div class="col-md-4 chunk">
-                <h3 class="text-center section-header">Sub-Section Title</h3>
-                <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
-            </div>
-
-        </div>
+        </section>
 
     </div>
-
-</section>
-
-<!-- Section: Test -->
-<section class="featurette section colored">
-
-    <div class="container">
-
-
-
-        <div class="row">
-
-            <div class="col-md-6 col-right chunk">
-                <h2>Section Title</h2>
-
-                <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- Section: Test -->
-<section class="section">
-
-    <div class="container">
-
-        <h2 class="section-title">Section Title</h2>
-
-        <div class="row">
-
-            <div class="col-md-8 chunk col-solo">
-                <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- Section: Test -->
-<section class="section">
-
-    <div class="container">
-
-        <h2 class="section-title">Section Title</h2>
-
-        <div class="row">
-
-            <div class="col-md-6 chunk">
-                <h3 class="text-center section-header">Sub-Section Title</h3>
-                <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
-            </div>
-
-            <div class="col-md-6 chunk">
-                <h3 class="text-center section-header">Sub-Section Title</h3>
-                <p>Maecenas gravida laoreet suscipit. Integer adipiscing pharetra nulla quis dapibus. Etiam pretium risus metus, in congue nisl cursus in. Donec et posuere sem. Donec massa lorem, tempus a felis eget, convallis rutrum eros. Nam consectetur arcu massa, in tincidunt odio fringilla ut.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
+</div>
 
 <?php get_footer(); ?>

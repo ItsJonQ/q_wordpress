@@ -1,20 +1,28 @@
 <?php
 /**
- * The template for displaying the footer.
+ * Footer
+ * @template
  *
- * Contains the closing of the #content div and all content after
- *
- * @package _s
+ * @package q_
  */
 ?>
 
     </div><!-- / #content -->
 
-    <footer id="colophon" class="site-footer" role="contentinfo">
-        <div class="site-info">
-            Q_ . 2014.
-        </div><!-- / .site-info -->
-    </footer><!-- / #colophon -->
+    <!-- Footer Wrapper -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Footer Container -->
+            <footer class="col-md-8 col-solo site-footer" id="colophon" role="contentinfo">
+                <div class="site-info">
+                    Q_ . 2014.
+                </div><!-- / .site-info -->
+            </footer><!-- / #colophon -->
+
+        </div>
+    </div>
+
 </div><!-- / #page -->
 
 <?php wp_footer(); ?>
