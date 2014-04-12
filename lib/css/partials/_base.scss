@@ -1,4 +1,7 @@
-// Template: Base
+/**
+ * Base
+ * @partial
+ */
 
 html {
     body {
@@ -7,7 +10,7 @@ html {
         font-family: $font-family-base;
         font-weight: $font-weight-base;
         font-size: $font-size-base;
-        line-height: 1.5em;
+        line-height: $line-height-base;
     }
 
     a {

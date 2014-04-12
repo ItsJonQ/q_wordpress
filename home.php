@@ -15,7 +15,7 @@ get_header(); ?>
         <div class="col-md-8 col-solo">
 
             <h2 class="headline"><strong>Hello</strong>. I'm Q!</h2>
-            <h3 class="sub-headline">I'm a web designer/developer who's really into UI/UX, simplicity, <br />and making things <em>pretty</em>.</h3>
+            <h3 class="sub-headline">I'm a web designer/developer who's really into UI/UX, simplicity, and making things <em>pretty</em>.</h3>
 
         </div>
 
