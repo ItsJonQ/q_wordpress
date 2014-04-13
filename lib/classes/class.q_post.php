@@ -27,6 +27,64 @@ if(!class_exists('q_post')) {
         }
 
         /**
+         * meta
+         * @param  [number]  $id    [ Inserting the post's ID ]
+         * @param  boolean $echo    [ Determing whether to return or echo the $output ]
+         * @return [ html ]         [ Returning the HTML from the publish_date method]
+         */
+        public static function meta( $id = null, $echo = true ) {
+            global $post;
+            // Getting the $id if the $id is not defined
+            if( !$id ) {
+                $id = $post->ID;
+            }
+            // Defining the $date
+            $date = self::publish_date( $id );
+            /**
+             * Defining the $output
+             * The reason why it is currently $output = $date is because the
+             * meta method might $output more than just the $date. Keeping
+             * it open and flexible for change and customization.
+             */
+            $output = $date;
+            // Returning / echoing the $output
+            if( $echo === true ) {
+                echo $output;
+            } else {
+                return $output;
+            }
+        }
+
+
+        /**
+         * publish_date
+         * Generating the post's published date
+         * @param  [ number ] $id   [ Inserting the post's ID if applicable]
+         * @return [ html ]         [ Returning the pbulishded date in a <time> HTML ]
+         */
+        public static function publish_date( $id = null, $echo = false ) {
+            global $post;
+            // Getting the $id if the $id is not defined
+            if( !$id ) {
+                $id = $post->ID;
+            }
+            // Defining the $output
+            $output = '
+            <!-- Post Article: Published Date -->
+            <time itemprop="datePublished" datetime="'. get_the_time( 'Y-m-d', $id ) .'">' . get_the_time( 'M j, Y', $id ) . '
+            </time>
+            ';
+            // Returning / echoing the $output
+            if( $echo === true ) {
+                echo $output;
+            } else {
+                return $output;
+            }
+        }
+
+
+
+        /**
          * title
          * Generating the title for the post
          * @param  integer $index [ Creates an <h1> tag if the index is 1 (first post) ]
