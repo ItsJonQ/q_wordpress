@@ -8,11 +8,7 @@
 
 get_header(); ?>
 
-<section class="featurette section cover" style="background-image:url('<?php q_image::featured(); ?>')">
-
-</section>
-
-    <!-- Featured Image -->
+    <?php q_image::featurette_cover(); ?>
 
     <!-- Main Container -->
     <div class="main-container container" id="main-container">

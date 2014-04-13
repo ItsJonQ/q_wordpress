@@ -82,7 +82,7 @@ if(!class_exists('q_image')) {
 
         }
 
-        public static function featured( $id = null ) {
+        public static function featurette_cover( $id = null ) {
             // Defining the $id if not defined
             if( !$id ) {
                 global $post;
@@ -106,8 +106,14 @@ if(!class_exists('q_image')) {
                 return false;
             }
 
-            echo $featured_image;
+            // Defining the cover
+            $output = '
+                <!-- Featured Image: Cover -->
+                <section class="featurette section cover" style="background-image:url('.$featured_image.')"></section>
+                ';
 
+            // Echoing the $output
+            echo $output;
         }
 
     }
