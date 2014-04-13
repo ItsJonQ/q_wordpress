@@ -18,13 +18,19 @@ if(!class_exists('q_')) {
      * Header
      * @class   q_header
      */
-    require_once( 'class.q_header.php' );
+    include( 'class.q_header.php' );
+
+    /**
+     * Image
+     * @class   q_image
+     */
+    include( 'class.q_image.php' );
 
     /**
      * Posts
      * @class   q_post
      */
-    require_once( 'class.q_post.php' );
+    include( 'class.q_post.php' );
 
 
     class q_ {
