@@ -1,0 +1,17 @@
+/**
+ * Responsive
+ * @responsive
+ */
+
+@media (min-width: 992px) {
+
+    .single{
+        article {
+            .entry-media-container {
+                margin-left: -15%;
+                margin-right: -15%;
+            }
+        }
+    }
+
+}

@@ -11,6 +11,10 @@ article {
             // main comment area
             white-space: inherit;
         }
+
+        textarea {
+            max-width: 100%;
+        }
     }
 
 }

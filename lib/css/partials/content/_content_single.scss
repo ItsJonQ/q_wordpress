@@ -29,9 +29,8 @@
         }
 
         .entry-media-container {
-            margin-left: -15%;
-            margin-right: -15%;
-            width: 130%;
+            margin-left: -($gutter-half);
+            margin-right: -($gutter-half);
         }
     }
 }
