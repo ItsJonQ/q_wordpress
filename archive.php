@@ -1,6 +1,6 @@
 <?php
 /**
- * Home
+ * Archive
  * @template
  *
  * @package q_
