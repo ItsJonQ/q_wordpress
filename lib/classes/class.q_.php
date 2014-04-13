@@ -15,6 +15,12 @@ if(!class_exists('q_')) {
     // Including / requiring the other classes
 
     /**
+     * Filter
+     * @class   q_filter
+     */
+    include( 'class.q_filter.php' );
+
+    /**
      * Header
      * @class   q_header
      */

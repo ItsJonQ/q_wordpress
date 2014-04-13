@@ -39,7 +39,7 @@ global $index;
         <!-- Post Content -->
         <div class="entry-content">
 
-            <?php q_post::content(); ?>
+            <?php the_excerpt(); ?>
 
         </div>
 

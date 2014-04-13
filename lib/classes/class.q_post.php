@@ -21,9 +21,8 @@ if(!class_exists('q_post')) {
          * @init
          */
         public static function init() {
-            /**
-             * Nothin' yet!
-             */
+
+            // add_filter('excerpt_more', array( 'q_post', 'filter_excerpt_read_more' ) );
         }
 
         /**
