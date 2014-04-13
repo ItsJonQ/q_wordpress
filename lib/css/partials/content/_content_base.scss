@@ -36,8 +36,8 @@ article {
         margin-bottom: $line-height-base;
 
         a {
-            color: $font-color-light;
-            text-decoration: underline;
+            color: darken($font-color-light, 20);
+            text-decoration: none;
 
             &:hover {
                 color: $font-color-brand;

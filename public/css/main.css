@@ -276,8 +276,8 @@ article .entry-meta {
   margin-bottom: 1.65em;
 }
 article .entry-meta a {
-  color: #aeb2b8;
-  text-decoration: underline;
+  color: #777f89;
+  text-decoration: none;
 }
 article .entry-meta a:hover {
   color: #3b9ca5;
