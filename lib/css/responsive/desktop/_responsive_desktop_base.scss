@@ -1,0 +1,42 @@
+/**
+ * Desktop Responsive
+ * @responsive
+ */
+
+@media (min-width: 992px) {
+
+    html {
+        body {
+            font-size: $font-size-base;
+            line-height: $line-height-base;
+        }
+    }
+
+    .single{
+        article {
+
+            .entry-header {
+                h1 {
+                    font-size: $font-size-large;
+                    letter-spacing: -1px;
+                    line-height: 1.15em;
+                }
+            }
+
+            .entry-content {
+                font-size: $font-size-base-plus;
+                line-height: $line-height-base-plus;
+            }
+
+            .entry-media-container {
+                margin-left: -15%;
+                margin-right: -15%;
+
+                &.video {
+                    padding-top: 77%;
+                }
+            }
+        }
+    }
+
+}

@@ -16,7 +16,7 @@ html body {
   color: #777f89;
   font-family: "Domine", "Georgia", "Serif";
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.65em;
 }
 html a {
@@ -273,7 +273,7 @@ article .entry-meta {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
   font-size: 0.85em;
   line-height: 1;
-  margin-bottom: 1.65em;
+  margin-bottom: 1.5em;
 }
 article .entry-meta a {
   color: #777f89;
@@ -435,15 +435,10 @@ article .entry-comments textarea {
 .single article h1, .single article h2, .single article h3, .single article h4, .single article h5, .single article h6 {
   color: #282c30;
 }
-.single article .entry-header h1 {
-  font-size: 3.2em;
-  letter-spacing: -1px;
-  line-height: 1.15em;
-}
 .single article .entry-content {
   color: #535a63;
-  font-size: 20px;
-  line-height: 1.8em;
+  font-size: 18px;
+  line-height: 1.65em;
   margin-bottom: 60px;
 }
 .single article .entry-content h1, .single article .entry-content h2, .single article .entry-content h3, .single article .entry-content h4, .single article .entry-content h5, .single article .entry-content h6 {
@@ -472,7 +467,25 @@ article .entry-comments textarea {
  * Responsive
  * @responsive
  */
+/**
+ * Desktop Responsive
+ * @responsive
+ */
 @media (min-width: 992px) {
+  html body {
+    font-size: 18px;
+    line-height: 1.65em;
+  }
+
+  .single article .entry-header h1 {
+    font-size: 3.2em;
+    letter-spacing: -1px;
+    line-height: 1.15em;
+  }
+  .single article .entry-content {
+    font-size: 20px;
+    line-height: 1.8em;
+  }
   .single article .entry-media-container {
     margin-left: -15%;
     margin-right: -15%;

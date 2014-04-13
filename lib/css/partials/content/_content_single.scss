@@ -10,18 +10,10 @@
             color: $font-color-black;
         }
 
-        .entry-header {
-            h1 {
-                font-size: $font-size-large;
-                letter-spacing: -1px;
-                line-height: 1.15em;
-            }
-        }
-
         .entry-content {
             color: darken($font-color-dark, 4);
-            font-size: $font-size-base-plus;
-            line-height: $line-height-base-plus;
+            font-size: $font-size-base;
+            line-height: $line-height-base;
             margin-bottom: $gutter-double;
 
             @include headings {

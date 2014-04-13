@@ -3,19 +3,4 @@
  * @responsive
  */
 
-@media (min-width: 992px) {
-
-    .single{
-        article {
-            .entry-media-container {
-                margin-left: -15%;
-                margin-right: -15%;
-
-                &.video {
-                    padding-top: 77%;
-                }
-            }
-        }
-    }
-
-}
+@import 'desktop/responsive_desktop_base';
