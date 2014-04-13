@@ -1,35 +1,35 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Single
+ * @template
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package _s
+ * @package q_
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+    <!-- Main Container -->
+    <div class="main-container container" id="main-container">
+        <div class="row">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+            <!-- Post List Container -->
+            <section class="col-md-8 col-solo" id="post-list">
 
-				<?php get_template_part( 'content', 'page' ); ?>
+            <?php
+            /**
+             * Getting the posts
+             */
+            while ( have_posts() ) {
+                // Defining the post info
+                the_post();
+                // Loading up the content template
+                get_template_part( 'templates/content/content', 'page' );
+            }
+            ?>
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
+            </section>
 
-			<?php endwhile; // end of the loop. ?>
+        </div>
+    </div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
