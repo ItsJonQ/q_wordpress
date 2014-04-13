@@ -13,6 +13,13 @@
 if(!class_exists('q_image')) {
 
     class q_image {
+        /**
+         * $config
+         * The stored config + data for this class
+         */
+        private static $config = array(
+            'has_featurette_cover'      => false
+            );
 
         /**
          * init
@@ -123,8 +130,32 @@ if(!class_exists('q_image')) {
                 <section class="featurette section cover" style="background-image:url('.$featured_image.')"></section>
                 ';
 
+            // Updating the classes status for has_featurette_cover
+            self::$config['has_featurette_cover'] = true;
+
             // Echoing the $output
             echo $output;
+        }
+
+        /**
+         * has_cover
+         * Public method to check if a featurette cover was used on the page
+         * @return boolean [ true / false ]
+         */
+        public static function has_cover() {
+            // Returning the boolean from $config
+            return self::$config['has_featurette_cover'];
+        }
+
+        /**
+         * has_featurette_cover
+         * @class_alias( has_cover )
+         * Public method to check if a featurette cover was used on the page
+         * @return boolean [ true / false ]
+         */
+        public static function has_featurette_cover() {
+            // Returning the boolean from $config
+            return self::has_cover();
         }
 
     }
