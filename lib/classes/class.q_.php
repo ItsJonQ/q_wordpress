@@ -1,4 +1,13 @@
 <?php
+/**
+ * q_
+ * This is the main class for the q_ wordpress theme
+ *
+ * @class
+ *
+ * @package q_
+ *
+ */
 
 // Defining the main q_ class
 if(!class_exists('q_')) {
@@ -10,6 +19,12 @@ if(!class_exists('q_')) {
      * @class   q_header
      */
     require_once( 'class.q_header.php' );
+
+    /**
+     * Posts
+     * @class   q_post
+     */
+    require_once( 'class.q_post.php' );
 
 
     class q_ {
