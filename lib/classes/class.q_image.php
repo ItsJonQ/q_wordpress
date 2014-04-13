@@ -106,6 +106,8 @@ if(!class_exists('q_image')) {
                 return false;
             }
 
+            echo $featured_image;
+
         }
 
     }
