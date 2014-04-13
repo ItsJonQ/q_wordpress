@@ -213,7 +213,6 @@ pre {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  margin-bottom: 30px;
   height: 20em;
   position: relative;
   overflow: hidden;
@@ -247,6 +246,7 @@ pre {
  * @partial
  */
 article {
+  margin-top: 30px;
   margin-bottom: 60px;
 }
 article .entry-header h1, article .entry-header h2, article .entry-header h3, article .entry-header h4, article .entry-header h5, article .entry-header h6 {
