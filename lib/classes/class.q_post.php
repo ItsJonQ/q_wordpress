@@ -91,16 +91,36 @@ if(!class_exists('q_post')) {
         }
 
         /**
+         * content
+         * the_content() output with a customized read more
+         * @return [ html ]         [ Returning a customized the_content() ]
+         */
+        public static function content( $echo = true ) {
+            // Customizing the read more text;
+            $read_more = 'Keep Reading';
+
+            // Defining the $output
+            $output = get_the_content( $read_more );
+
+            // Returning the $output
+            if( $echo === true ) {
+                echo $output;
+            } else {
+                return $output;
+            }
+        }
+
+
+        /**
          * meta
          * @param  [number]  $id    [ Inserting the post's ID ]
          * @param  boolean $echo    [ Determing whether to return or echo the $output ]
          * @return [ html ]         [ Returning the HTML from the publish_date method]
          */
         public static function meta( $id = null, $echo = true ) {
-            global $post;
             // Getting the $id if the $id is not defined
             if( !$id ) {
-                $id = $post->ID;
+                $id = get_the_ID();
             }
             // Defining the $date
             $date = self::publish_date( $id );
@@ -127,10 +147,9 @@ if(!class_exists('q_post')) {
          * @return [ html ]         [ Returning the pbulishded date in a <time> HTML ]
          */
         public static function publish_date( $id = null, $echo = false ) {
-            global $post;
             // Getting the $id if the $id is not defined
             if( !$id ) {
-                $id = $post->ID;
+                $id = get_the_ID();
             }
             // Defining the $output
             $output = '

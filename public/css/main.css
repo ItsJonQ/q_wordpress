@@ -213,9 +213,22 @@ article .entry-header h1, article .entry-header h2, article .entry-header h3, ar
 }
 article .entry-header h1 a, article .entry-header h2 a, article .entry-header h3 a, article .entry-header h4 a, article .entry-header h5 a, article .entry-header h6 a {
   color: #373d42;
+  display: block;
 }
 article .entry-header h1 a:hover, article .entry-header h2 a:hover, article .entry-header h3 a:hover, article .entry-header h4 a:hover, article .entry-header h5 a:hover, article .entry-header h6 a:hover {
   color: #3b9ca5;
+  text-decoration: none;
+}
+article .more-link {
+  color: #3b9ca5;
+  font-size: 0.85em;
+  line-height: 1;
+  display: block;
+  margin: 15px 0;
+  font-weight: 700;
+}
+article .more-link:hover {
+  color: #43b1bc;
   text-decoration: none;
 }
 

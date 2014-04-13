@@ -31,7 +31,7 @@ global $index;
     <!-- Post Content -->
     <div class="entry-content">
 
-        <?php the_content(); ?>
+        <?php q_post::content(); ?>
 
     </div>
 

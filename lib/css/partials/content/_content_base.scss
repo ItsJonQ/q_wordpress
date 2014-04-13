@@ -13,6 +13,7 @@ article {
 
             a {
                 color: $font-color-darker;
+                display: block;
 
                 &:hover {
                     color: $q-color-main;
@@ -21,6 +22,20 @@ article {
             }
         }
 
+    }
+
+    .more-link {
+        color: $link-color-main;
+        font-size: $font-size-small;
+        line-height: 1;
+        display: block;
+        margin: $gutter-half 0;
+        font-weight: $font-weight-bold;
+
+        &:hover {
+            color: $link-color-hover;
+            text-decoration: none;
+        }
     }
 
 }
