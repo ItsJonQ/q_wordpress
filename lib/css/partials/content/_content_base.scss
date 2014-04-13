@@ -6,6 +6,8 @@
 article {
     margin-top: $gutter + $gutter-half;
     margin-bottom: $gutter-double;
+    border-bottom: 1px solid #eee;
+    padding-bottom: $gutter-half;
 
     .entry-header {
 

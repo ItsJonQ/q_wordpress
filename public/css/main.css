@@ -253,6 +253,8 @@ pre {
 article {
   margin-top: 45px;
   margin-bottom: 60px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
 }
 article .entry-header h1, article .entry-header h2, article .entry-header h3, article .entry-header h4, article .entry-header h5, article .entry-header h6 {
   color: #373d42;
