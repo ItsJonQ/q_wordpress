@@ -262,6 +262,15 @@ article .entry-comments code {
 }
 
 /**
+ * Page (Content)
+ * @partial
+ */
+.page-header {
+  border: none;
+  padding-bottom: 0;
+}
+
+/**
  * Post (Content)
  * @partial
  */

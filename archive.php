@@ -25,7 +25,7 @@ $index = 0;
         if ( have_posts() ) : ?>
 
         <!-- Archive Page Header -->
-        <header class="page-header">
+        <header class="page-header col-md-8 col-solo">
             <!-- Archive Page Title -->
             <h1 class="page-title">
                 <?php q_post::archive_title(); ?>
