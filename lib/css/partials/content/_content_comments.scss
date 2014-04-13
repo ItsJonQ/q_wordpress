@@ -1,0 +1,16 @@
+/**
+ * Comments (Content)
+ * @partial
+ */
+
+article {
+
+    .entry-comments {
+        code {
+            // This prevents anything in <code> to break the width of the
+            // main comment area
+            white-space: inherit;
+        }
+    }
+
+}
