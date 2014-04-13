@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-<section class="featurette section colored hello text-center" style="background-image:url('<?php q_image::featured(); ?>')">
+<section class="featurette section cover" style="background-image:url('<?php q_image::featured(); ?>')">
 
 </section>
 

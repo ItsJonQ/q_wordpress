@@ -1,0 +1,19 @@
+/**
+ * Cover (Featurette)
+ * This is the main featurette that showcases the featured images of posts.
+ * This is mainly seen on single / singular pages.
+ *
+ * @partial
+ */
+
+.featurette.cover {
+    @include background-size(cover);
+
+}
+
+// Adjusting the cover for singular pages
+.single {
+    .featurette.cover {
+        height: 20em;
+    }
+}

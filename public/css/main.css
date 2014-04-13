@@ -139,6 +139,15 @@ h6, .h6 {
   margin: 15px;
 }
 
+.chunk {
+  padding: 15px;
+}
+.chunk.shaded {
+  background: #f5f5f5;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .featurette {
   border: none;
   display: table;
@@ -175,13 +184,23 @@ h6, .h6 {
   line-height: 1.4em;
 }
 
-.chunk {
-  padding: 15px;
+/**
+ * Cover (Featurette)
+ * This is the main featurette that showcases the featured images of posts.
+ * This is mainly seen on single / singular pages.
+ *
+ * @partial
+ */
+.featurette.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.chunk.shaded {
-  background: #f5f5f5;
-  padding-left: 30px;
-  padding-right: 30px;
+
+.single .featurette.cover {
+  height: 20em;
 }
 
 /**
