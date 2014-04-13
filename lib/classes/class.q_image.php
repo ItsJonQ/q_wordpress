@@ -37,16 +37,27 @@ if(!class_exists('q_image')) {
 
             global $post;
 
+            // Defining the default $settings
+            $settings = array(
+                'return'    => 'image',
+                'size'      => 'thumbnail',
+                'alt'       => 'alt',
+                'id'        => $post->ID
+                );
+
+            // Extending the $settings
+            $settings = q_::extend( $settings, $options );
+
             // Defining the $return from options
-            $return = isset($options['return']) ? $options['return'] : 'image';
+            $return = $settings['return'];
 
             // Defining the size from options
-            $size = isset($options['size']) ? $options['size'] : 'thumbnail';
+            $size = $settings['size'];
 
             // Defining the alt
-            $alt = isset($options['alt']) ? $options['alt'] : false;
+            $alt = $settings['alt'];
 
-            $id = isset($options['id']) ? $options['id'] : $post->ID;
+            $id = $settings['id'];
 
             // Getting and defining the $thumb from WP thumbnail
             $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), $size );
