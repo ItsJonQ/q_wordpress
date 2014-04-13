@@ -10,6 +10,10 @@
             .entry-media-container {
                 margin-left: -15%;
                 margin-right: -15%;
+
+                &.video {
+                    padding-top: 77%;
+                }
             }
         }
     }

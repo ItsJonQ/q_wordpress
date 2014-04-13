@@ -31,7 +31,7 @@ article {
         font-family: $font-family-sans-serif;
         font-size: $font-size-small;
         line-height: 1;
-        margin-bottom: $gutter-half;
+        margin-bottom: $line-height-base;
 
         a {
             color: $font-color-light;
@@ -40,6 +40,23 @@ article {
             &:hover {
                 color: $font-color-brand;
                 text-decoration: underline;
+            }
+        }
+
+        .sep {
+            margin: 0 5px;
+        }
+
+        .space {
+            margin: 0 5px;
+            font-weight: $font-weight-base;
+        }
+
+        .entry-category {
+            font-weight: bold;
+
+            .space {
+                font-weight: $font-weight-base;
             }
         }
     }
@@ -83,7 +100,7 @@ article {
 
         &.video {
             height: 0;
-            padding-top: 77%;
+            padding-top: 62.65%;
             position: relative;
 
             iframe {

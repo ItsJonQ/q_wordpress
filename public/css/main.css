@@ -266,7 +266,7 @@ article .entry-meta {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
   font-size: 0.85em;
   line-height: 1;
-  margin-bottom: 15px;
+  margin-bottom: 1.65em;
 }
 article .entry-meta a {
   color: #aeb2b8;
@@ -275,6 +275,19 @@ article .entry-meta a {
 article .entry-meta a:hover {
   color: #3b9ca5;
   text-decoration: underline;
+}
+article .entry-meta .sep {
+  margin: 0 5px;
+}
+article .entry-meta .space {
+  margin: 0 5px;
+  font-weight: 400;
+}
+article .entry-meta .entry-category {
+  font-weight: bold;
+}
+article .entry-meta .entry-category .space {
+  font-weight: 400;
 }
 article .entry-content blockquote,
 article .entry-content pre,
@@ -302,7 +315,7 @@ article .entry-media-container img {
 }
 article .entry-media-container.video {
   height: 0;
-  padding-top: 77%;
+  padding-top: 62.65%;
   position: relative;
 }
 article .entry-media-container.video iframe {
@@ -454,5 +467,8 @@ article .entry-comments textarea {
   .single article .entry-media-container {
     margin-left: -15%;
     margin-right: -15%;
+  }
+  .single article .entry-media-container.video {
+    padding-top: 77%;
   }
 }

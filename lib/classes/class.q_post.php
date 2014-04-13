@@ -104,6 +104,15 @@ if(!class_exists('q_post')) {
         }
 
 
+        public static function category() {
+            ob_start();
+            the_category('</span><span class="space">|</span><span itemprop="articleSection">');
+            $category = ob_get_clean();
+            $output = '<span class="entry-category"><span itemprop="articleSection">'.$category.'</span></span>';
+            return $output;
+        }
+
+
         /**
          * content
          * the_content() output with a customized read more
@@ -139,13 +148,16 @@ if(!class_exists('q_post')) {
             // Defining the $date
             $author = self::author();
             $date = self::publish_date( $id );
+            $category = self::category();
+            // Defining the separator
+            $sep = ' <span class="sep">&#183;</span> ';
             /**
              * Defining the $output
              * The reason why it is currently $output = $date is because the
              * meta method might $output more than just the $date. Keeping
              * it open and flexible for change and customization.
              */
-            $output = $author . ' &#183; ' . $date;
+            $output = $author . $sep . $date . $sep . $category;
             // Returning / echoing the $output
             if( $echo === true ) {
                 echo $output;
