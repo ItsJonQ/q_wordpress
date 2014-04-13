@@ -9,7 +9,7 @@
 get_header(); ?>
 
 <!-- Main Container -->
-<div class="container">
+<div class="main-container container" id="main-container">
     <div class="row">
 
         <!-- Post List Container -->

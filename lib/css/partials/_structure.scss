@@ -3,6 +3,7 @@
  * @partial
  */
 
+// Columns
 .col-solo {
     float: none;
     margin-left: auto;
@@ -15,4 +16,10 @@
 
 .col-right {
     float: right;
+}
+
+
+// Containers
+.main-container {
+    margin: $gutter auto;
 }

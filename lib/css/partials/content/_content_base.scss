@@ -1,0 +1,25 @@
+/**
+ * Base (Content)
+ * @partial
+ */
+
+article {
+
+    .entry-header {
+
+        @include headings {
+            font-weight: $font-weight-bold;
+
+            a {
+                color: $font-color-darker;
+
+                &:hover {
+                    color: $font-color-dark;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+}

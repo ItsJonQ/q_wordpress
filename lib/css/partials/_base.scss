@@ -3,7 +3,7 @@
  * @partial
  */
 
-html {
+ html {
     body {
         @include font-smoothing;
         color: $font-color-main;
@@ -19,5 +19,18 @@ html {
         &:hover {
             color: lighten($font-color-main, 6);
         }
+    }
+
+    /**
+     * Selection
+     * @source http://css-tricks.com/overriding-the-default-text-selection-color-with-css/
+     */
+    ::selection {
+        background: rgba($q-color-main, 0.7); /* Safari */
+        color: $font-color-white;
+    }
+    ::-moz-selection {
+        background: rgba($q-color-main, 0.6); /* Firefox */
+        color: $font-color-white;
     }
 }

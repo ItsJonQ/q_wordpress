@@ -21,6 +21,12 @@
  * Base
  * @partial
  */
+html {
+  /**
+   * Selection
+   * @source http://css-tricks.com/overriding-the-default-text-selection-color-with-css/
+   */
+}
 html body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,7 +35,7 @@ html body {
   color: #777f89;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial";
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.65em;
 }
 html a {
@@ -37,6 +43,16 @@ html a {
 }
 html a:hover {
   color: #878e97;
+}
+html ::selection {
+  background: rgba(59, 156, 165, 0.7);
+  /* Safari */
+  color: #eeeeee;
+}
+html ::-moz-selection {
+  background: rgba(59, 156, 165, 0.6);
+  /* Firefox */
+  color: #eeeeee;
 }
 
 /**
@@ -93,6 +109,10 @@ h6, .h6 {
 
 .col-right {
   float: right;
+}
+
+.main-container {
+  margin: 30px auto;
 }
 
 .site-header {
@@ -163,3 +183,23 @@ h6, .h6 {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+/**
+ * Base (Content)
+ * @partial
+ */
+article .entry-header h1, article .entry-header h2, article .entry-header h3, article .entry-header h4, article .entry-header h5, article .entry-header h6 {
+  font-weight: 700;
+}
+article .entry-header h1 a, article .entry-header h2 a, article .entry-header h3 a, article .entry-header h4 a, article .entry-header h5 a, article .entry-header h6 a {
+  color: #373d42;
+}
+article .entry-header h1 a:hover, article .entry-header h2 a:hover, article .entry-header h3 a:hover, article .entry-header h4 a:hover, article .entry-header h5 a:hover, article .entry-header h6 a:hover {
+  color: #5c646e;
+  text-decoration: none;
+}
+
+/**
+ * Post (Content)
+ * @partial
+ */
