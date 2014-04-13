@@ -166,6 +166,22 @@ if(!class_exists('q_post')) {
             }
         }
 
+        public static function pagination() {
+            // Don't print empty markup if there's only one page.
+            if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
+                return;
+            }
+
+            ob_start();
+            // Getting the pagination template
+            include(locate_template('templates/partials/pagination.php'));
+            // Defining the $output from the template
+            $output = ob_get_clean();
+
+            // Echoing the $output
+            echo $output;
+        }
+
 
         /**
          * publish_date
