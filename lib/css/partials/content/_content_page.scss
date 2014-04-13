@@ -6,5 +6,37 @@
 .page-header {
     border: none;
     padding-bottom: 0;
+}
 
+.page {
+    article {
+
+        @include headings {
+            color: $font-color-black;
+        }
+
+        .entry-header {
+            h1 {
+                font-size: $font-size-large;
+            }
+        }
+
+        .entry-content {
+            color: darken($font-color-dark, 4);
+            font-size: $font-size-base-plus;
+            line-height: $line-height-base-plus;
+            margin-bottom: $gutter-double;
+
+            @include headings {
+                font-family: $font-family-sans-serif;
+                font-weight: $font-weight-base;
+            }
+        }
+
+        .entry-media-container {
+            margin-left: -15%;
+            margin-right: -15%;
+            width: 130%;
+        }
+    }
 }

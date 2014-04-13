@@ -371,6 +371,28 @@ article .entry-comments code {
   padding-bottom: 0;
 }
 
+.page article h1, .page article h2, .page article h3, .page article h4, .page article h5, .page article h6 {
+  color: #282c30;
+}
+.page article .entry-header h1 {
+  font-size: 3.2em;
+}
+.page article .entry-content {
+  color: #535a63;
+  font-size: 20px;
+  line-height: 1.8em;
+  margin-bottom: 60px;
+}
+.page article .entry-content h1, .page article .entry-content h2, .page article .entry-content h3, .page article .entry-content h4, .page article .entry-content h5, .page article .entry-content h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+  font-weight: 400;
+}
+.page article .entry-media-container {
+  margin-left: -15%;
+  margin-right: -15%;
+  width: 130%;
+}
+
 /**
  * Post (Content)
  * @partial
