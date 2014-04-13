@@ -1,32 +1,35 @@
 <?php
 /**
- * The Template for displaying all single posts.
+ * Single
+ * @template
  *
  * @package q_
  */
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
+    <!-- Main Container -->
+    <div class="main-container container" id="main-container">
+        <div class="row">
 
-        <?php while ( have_posts() ) : the_post(); ?>
-
-            <?php get_template_part( 'content', 'single' ); ?>
-
-            <?php _s_post_nav(); ?>
+            <!-- Post List Container -->
+            <section class="col-md-8 col-solo" id="post-list">
 
             <?php
-                // If comments are open or we have at least one comment, load up the comment template
-                if ( comments_open() || '0' != get_comments_number() ) :
-                    comments_template();
-                endif;
+            /**
+             * Getting the posts
+             */
+            while ( have_posts() ) {
+                // Defining the post info
+                the_post();
+                // Loading up the content template
+                get_template_part( 'templates/content/content', 'single' );
+            }
             ?>
 
-        <?php endwhile; // end of the loop. ?>
+            </section>
 
-        </main><!-- #main -->
-    </div><!-- #primary -->
+        </div>
+    </div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
