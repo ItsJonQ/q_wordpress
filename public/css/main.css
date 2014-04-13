@@ -359,6 +359,47 @@ article .entry-comments code {
 article .entry-comments textarea {
   max-width: 100%;
 }
+article .entry-comments ol {
+  list-style: none;
+}
+article .entry-comments .comment-list {
+  padding-left: 0;
+}
+article .entry-comments .comment-list article {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+article .entry-comments .comment-list article .comment-metadata {
+  color: #aeb2b8;
+  font-size: 0.85em;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+  line-height: 1.5em;
+}
+article .entry-comments .comment-list article .comment-metadata a {
+  color: #aeb2b8;
+}
+article .entry-comments .comment-respond .comment-form-comment label {
+  display: block;
+}
+article .entry-comments .comment-respond .comment-form-comment textarea {
+  width: 100%;
+  padding: 15px;
+  color: #5c646e;
+  border: 1px solid #ddd;
+}
+article .entry-comments .comment-respond .form-submit #submit {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+  font-size: 0.85em;
+  line-height: 1;
+  background-color: transparent;
+  border: 2px solid #5c646e;
+  font-weight: bold;
+  padding: 10px 15px;
+  color: #5c646e;
+}
+article .entry-comments .comment-respond .form-submit #submit:hover {
+  background-color: whitesmoke;
+}
 
 /**
  * Images (Content)
