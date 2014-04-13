@@ -200,6 +200,14 @@ article .entry-header h1 a:hover, article .entry-header h2 a:hover, article .ent
 }
 
 /**
+ * Comments (Content)
+ * @partial
+ */
+article .entry-comments code {
+  white-space: inherit;
+}
+
+/**
  * Post (Content)
  * @partial
  */
