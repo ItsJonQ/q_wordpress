@@ -201,6 +201,10 @@ p {
   height: 20em;
 }
 
+.single .featurette.cover {
+  height: 28em;
+}
+
 /**
  * Base (Content)
  * @partial
@@ -274,6 +278,15 @@ article .entry-comments code {
  * Single (Content)
  * @partial
  */
-article .entry-content {
+.single article h1, .single article h2, .single article h3, .single article h4, .single article h5, .single article h6 {
+  color: #282c30;
+}
+.single article .entry-header h1 {
+  font-size: 3.2em;
+}
+.single article .entry-content {
+  color: #535a63;
+  font-size: 20px;
+  line-height: 1.8em;
   margin-bottom: 60px;
 }
