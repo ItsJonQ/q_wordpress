@@ -45,7 +45,7 @@ if(!class_exists('q_post')) {
                 single_tag_title();
 
             elseif ( is_author() ) :
-                printf( __( 'Posts by %s', '_s' ), '<span class="vcard">' . get_the_author() . '</span>' );
+                printf( __( 'Posts by <strong>%s</strong>', '_s' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
             elseif ( is_day() ) :
                 printf( __( 'Day: %s', '_s' ), '<span>' . get_the_date() . '</span>' );
