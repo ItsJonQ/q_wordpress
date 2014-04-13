@@ -6,6 +6,9 @@
  *
  * @package q_
  */
+
+// Getting the $index from the loop
+global $index;
 ?>
 
 <!-- Post Article -->
@@ -16,11 +19,7 @@
         <!-- Post Title -->
         <div class="entry-title">
             <!-- Post Title - Headline -->
-            <h2>
-                <a href="<?php the_permalink(); ?>" rel="bookmark">
-                    <?php the_title(); ?>
-                </a>
-            </h2>
+            <?php q_post::title( $index ); ?>
         </div>
         <!-- Post Meta -->
         <div class="entry-meta">
