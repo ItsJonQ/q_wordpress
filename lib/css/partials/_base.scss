@@ -14,6 +14,7 @@
     }
 
     a {
+        @include transition(color 0.25s ease);
         color: $font-color-main;
 
         &:hover {
