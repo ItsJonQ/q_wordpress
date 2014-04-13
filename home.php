@@ -6,7 +6,11 @@
  * @package q_
  */
 
-get_header(); ?>
+get_header();
+
+// Defining the $index for the post loop
+$index = 0;
+?>
 
     <!-- Main Container -->
     <div class="main-container container" id="main-container">
@@ -24,6 +28,8 @@ get_header(); ?>
                 while ( have_posts() ) {
                     // Defining the post info
                     the_post();
+                    // Increasing the $index
+                    $index++;
                     // Loading up the content template
                     get_template_part( 'templates/content/content', 'post' );
                 }
