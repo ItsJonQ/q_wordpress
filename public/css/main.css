@@ -379,41 +379,47 @@ article .more-link:hover {
  * Comments (Content)
  * @partial
  */
-article .entry-comments code {
+.entry-comments {
+  margin-bottom: 60px;
+}
+.entry-comments h1, .entry-comments h2, .entry-comments h3, .entry-comments h4, .entry-comments h5, .entry-comments h6 {
+  color: #282c30;
+}
+.entry-comments code {
   white-space: inherit;
 }
-article .entry-comments textarea {
+.entry-comments textarea {
   max-width: 100%;
 }
-article .entry-comments ol {
+.entry-comments ol {
   list-style: none;
 }
-article .entry-comments .comment-list {
+.entry-comments .comment-list {
   padding-left: 0;
 }
-article .entry-comments .comment-list article {
+.entry-comments .comment-list article {
   margin-top: 0;
   margin-bottom: 30px;
 }
-article .entry-comments .comment-list article .comment-metadata {
+.entry-comments .comment-list article .comment-metadata {
   color: #aeb2b8;
   font-size: 0.85em;
   font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
   line-height: 1.5em;
 }
-article .entry-comments .comment-list article .comment-metadata a {
+.entry-comments .comment-list article .comment-metadata a {
   color: #aeb2b8;
 }
-article .entry-comments .comment-respond .comment-form-comment label {
+.entry-comments .comment-respond .comment-form-comment label {
   display: block;
 }
-article .entry-comments .comment-respond .comment-form-comment textarea {
+.entry-comments .comment-respond .comment-form-comment textarea {
   width: 100%;
   padding: 15px;
   color: #5c646e;
   border: 1px solid #ddd;
 }
-article .entry-comments .comment-respond .form-submit #submit {
+.entry-comments .comment-respond .form-submit #submit {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
   font-size: 0.85em;
   line-height: 1;
@@ -423,7 +429,7 @@ article .entry-comments .comment-respond .form-submit #submit {
   padding: 10px 15px;
   color: #5c646e;
 }
-article .entry-comments .comment-respond .form-submit #submit:hover {
+.entry-comments .comment-respond .form-submit #submit:hover {
   background-color: whitesmoke;
 }
 

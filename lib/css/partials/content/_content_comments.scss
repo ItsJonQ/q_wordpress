@@ -3,74 +3,77 @@
  * @partial
  */
 
-article {
+.entry-comments {
+    margin-bottom: $gutter-double;
 
-    .entry-comments {
-        code {
-            // This prevents anything in <code> to break the width of the
-            // main comment area
-            white-space: inherit;
-        }
+    @include headings {
+        color: $font-color-black;
+    }
 
-        textarea {
-            max-width: 100%;
-        }
 
-        ol {
-            list-style: none;
-        }
+    code {
+        // This prevents anything in <code> to break the width of the
+        // main comment area
+        white-space: inherit;
+    }
 
-        .comment-list {
-            padding-left: 0;
+    textarea {
+        max-width: 100%;
+    }
 
-            article {
-                margin-top: 0;
-                margin-bottom: $gutter;
+    ol {
+        list-style: none;
+    }
 
-                .comment-metadata {
+    .comment-list {
+        padding-left: 0;
+
+        article {
+            margin-top: 0;
+            margin-bottom: $gutter;
+
+            .comment-metadata {
+                color: $font-color-light;
+                font-size: $font-size-small;
+                font-family: $font-family-sans-serif;
+                line-height: 1.5em;
+
+                a {
                     color: $font-color-light;
-                    font-size: $font-size-small;
-                    font-family: $font-family-sans-serif;
-                    line-height: 1.5em;
-
-                    a {
-                        color: $font-color-light;
-                    }
-                }
-            }
-        }
-
-        .comment-respond {
-            .comment-form-comment {
-                label {
-                    display: block;
-                }
-
-                textarea {
-                    width: 100%;
-                    padding: $gutter-half;
-                    color: $font-color-dark;
-                    border: 1px solid #ddd;
-                }
-            }
-
-            .form-submit {
-                #submit {
-                    font-family: $font-family-sans-serif;
-                    font-size: $font-size-small;
-                    line-height: 1;
-                    background-color: transparent;
-                    border: 2px solid $font-color-dark;
-                    font-weight: bold;
-                    padding: 10px 15px;
-                    color: $font-color-dark;
-
-                    &:hover {
-                        background-color: $bg-color-light;
-                    }
                 }
             }
         }
     }
 
+    .comment-respond {
+        .comment-form-comment {
+            label {
+                display: block;
+            }
+
+            textarea {
+                width: 100%;
+                padding: $gutter-half;
+                color: $font-color-dark;
+                border: 1px solid #ddd;
+            }
+        }
+
+        .form-submit {
+            #submit {
+                font-family: $font-family-sans-serif;
+                font-size: $font-size-small;
+                line-height: 1;
+                background-color: transparent;
+                border: 2px solid $font-color-dark;
+                font-weight: bold;
+                padding: 10px 15px;
+                color: $font-color-dark;
+
+                &:hover {
+                    background-color: $bg-color-light;
+                }
+            }
+        }
+    }
 }
