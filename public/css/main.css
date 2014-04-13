@@ -195,7 +195,7 @@ article .entry-header h1 a, article .entry-header h2 a, article .entry-header h3
   color: #373d42;
 }
 article .entry-header h1 a:hover, article .entry-header h2 a:hover, article .entry-header h3 a:hover, article .entry-header h4 a:hover, article .entry-header h5 a:hover, article .entry-header h6 a:hover {
-  color: #5c646e;
+  color: #3b9ca5;
   text-decoration: none;
 }
 
