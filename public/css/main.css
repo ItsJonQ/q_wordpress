@@ -99,6 +99,10 @@ pre {
   padding: 20px;
 }
 
+.hashtag {
+  color: #3b9ca5;
+}
+
 /**
  * Structure
  * @partial
