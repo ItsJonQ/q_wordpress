@@ -1,0 +1,18 @@
+/**
+ * Tables (Content)
+ * @partial
+ */
+
+.entry-content {
+
+    table {
+        font-size: $font-size-small;
+        line-height: $line-height-base;
+
+        td,
+        th {
+            padding: 10px;
+        }
+    }
+
+}

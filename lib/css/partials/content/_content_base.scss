@@ -53,6 +53,24 @@ article {
         table {
             margin-bottom: $line-height-base;
         }
+
+        dl {
+            dt, dd {
+                margin-bottom: $gutter-half;
+            }
+        }
+
+        ul {
+            ol, ul {
+                margin-bottom: 0;
+            }
+        }
+
+        ol {
+            ol, ul {
+                margin-bottom: 0;
+            }
+        }
     }
 
     .entry-media-container {

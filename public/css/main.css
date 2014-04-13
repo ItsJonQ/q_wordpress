@@ -284,6 +284,15 @@ article .entry-content ul,
 article .entry-content table {
   margin-bottom: 1.65em;
 }
+article .entry-content dl dt, article .entry-content dl dd {
+  margin-bottom: 15px;
+}
+article .entry-content ul ol, article .entry-content ul ul {
+  margin-bottom: 0;
+}
+article .entry-content ol ol, article .entry-content ol ul {
+  margin-bottom: 0;
+}
 article .entry-media-container {
   margin-bottom: 1.65em;
 }
@@ -421,4 +430,17 @@ article .entry-comments code {
   margin-left: -15%;
   margin-right: -15%;
   width: 130%;
+}
+
+/**
+ * Tables (Content)
+ * @partial
+ */
+.entry-content table {
+  font-size: 0.85em;
+  line-height: 1.65em;
+}
+.entry-content table td,
+.entry-content table th {
+  padding: 10px;
 }
