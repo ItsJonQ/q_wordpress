@@ -102,6 +102,9 @@ h6, .h6 {
   margin-left: auto;
   margin-right: auto;
 }
+.col-solo.col-md-8 {
+  max-width: 780px;
+}
 
 .col-left {
   float: left;
@@ -109,10 +112,6 @@ h6, .h6 {
 
 .col-right {
   float: right;
-}
-
-.main-container {
-  margin: 30px auto;
 }
 
 .site-header {
@@ -197,9 +196,9 @@ h6, .h6 {
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-.single .featurette.cover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
   height: 20em;
 }
 
@@ -207,6 +206,9 @@ h6, .h6 {
  * Base (Content)
  * @partial
  */
+article {
+  margin-bottom: 60px;
+}
 article .entry-header h1, article .entry-header h2, article .entry-header h3, article .entry-header h4, article .entry-header h5, article .entry-header h6 {
   color: #373d42;
   font-weight: 700;
@@ -219,6 +221,20 @@ article .entry-header h1 a:hover, article .entry-header h2 a:hover, article .ent
   color: #3b9ca5;
   text-decoration: none;
 }
+article .entry-meta {
+  color: #aeb2b8;
+  font-size: 0.85em;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+article .entry-meta a {
+  color: #aeb2b8;
+  text-decoration: underline;
+}
+article .entry-meta a:hover {
+  color: #3b9ca5;
+  text-decoration: underline;
+}
 article .more-link {
   color: #3b9ca5;
   font-size: 0.85em;
@@ -228,7 +244,7 @@ article .more-link {
   font-weight: 700;
 }
 article .more-link:hover {
-  color: #43b1bc;
+  color: #52b8c1;
   text-decoration: none;
 }
 

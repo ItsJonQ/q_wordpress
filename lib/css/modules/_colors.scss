@@ -11,7 +11,9 @@ $border-color-main:         #eee !default;
 
 
 // Font Colors
+$font-color-brand:          $q-color-main !default;
 $font-color-main:           #777F89 !default;
+$font-color-light:          lighten($font-color-main, 20) !default;
 $font-color-darker:         #373D42 !default;
 $font-color-dark:           #5C646E !default;
 $font-color-white:          #eee !default;
@@ -19,4 +21,4 @@ $font-color-white:          #eee !default;
 
 // Link Colors
 $link-color-main:           $q-color-main !default;
-$link-color-hover:          lighten($q-color-main, 6) !default;
+$link-color-hover:          lighten($q-color-main, 10) !default;

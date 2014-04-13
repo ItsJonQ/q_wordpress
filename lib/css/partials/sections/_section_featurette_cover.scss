@@ -8,12 +8,16 @@
 
 .featurette.cover {
     @include background-size(cover);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: $gutter;
+    height: 20em;
 
 }
 
 // Adjusting the cover for singular pages
 .single {
     .featurette.cover {
-        height: 20em;
+        // height: 20em;
     }
 }

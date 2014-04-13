@@ -9,27 +9,25 @@
 get_header(); ?>
 
     <!-- Main Container -->
-    <div class="main-container container" id="main-container">
-        <div class="row">
+    <div class="main-container" id="main-container">
 
-            <!-- Post List Container -->
-            <section class="col-md-8 col-solo" id="post-list">
+        <!-- Post Container -->
+        <section class="post-container page-container">
 
-            <?php
-            /**
-             * Getting the posts
-             */
-            while ( have_posts() ) {
-                // Defining the post info
-                the_post();
-                // Loading up the content template
-                get_template_part( 'templates/content/content', 'page' );
-            }
-            ?>
+        <?php
+        /**
+         * Getting the posts
+         */
+        while ( have_posts() ) {
+            // Defining the post info
+            the_post();
+            // Loading up the content template
+            get_template_part( 'templates/content/content', 'page' );
+        }
+        ?>
 
-            </section>
+        </section>
 
-        </div>
     </div>
 
 <?php get_footer(); ?>

@@ -4,6 +4,7 @@
  */
 
 article {
+    margin-bottom: $gutter-double;
 
     .entry-header {
 
@@ -22,6 +23,23 @@ article {
             }
         }
 
+    }
+
+    .entry-meta {
+        color: $font-color-light;
+        font-size: $font-size-small;
+        line-height: 1;
+        margin-bottom: $gutter-half;
+
+        a {
+            color: $font-color-light;
+            text-decoration: underline;
+
+            &:hover {
+                color: $font-color-brand;
+                text-decoration: underline;
+            }
+        }
     }
 
     .more-link {

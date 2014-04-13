@@ -13,38 +13,36 @@ $index = 0;
 ?>
 
     <!-- Main Container -->
-    <div class="main-container container" id="main-container">
-        <div class="row">
+    <div class="main-container" id="main-container">
 
-            <!-- Post List Container -->
-            <section class="col-md-8 col-solo" id="post-list">
+        <!-- Post List Container -->
+        <section class="post-container post-list" id="post-list">
 
-            <?php
+        <?php
+        /**
+         * Getting the posts
+         */
+        if ( have_posts() ) :
+            // Looping through the posts
+            while ( have_posts() ) {
+                // Defining the post info
+                the_post();
+                // Increasing the $index
+                $index++;
+                // Loading up the content template
+                get_template_part( 'templates/content/content', 'post' );
+            }
+
+        else :
+
             /**
-             * Getting the posts
+             * No posts!
              */
-            if ( have_posts() ) :
-                // Looping through the posts
-                while ( have_posts() ) {
-                    // Defining the post info
-                    the_post();
-                    // Increasing the $index
-                    $index++;
-                    // Loading up the content template
-                    get_template_part( 'templates/content/content', 'post' );
-                }
 
-            else :
+        endif; ?>
 
-                /**
-                 * No posts!
-                 */
+        </section>
 
-            endif; ?>
-
-            </section>
-
-        </div>
     </div>
 
 <?php get_footer(); ?>
