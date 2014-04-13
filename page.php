@@ -1,6 +1,6 @@
 <?php
 /**
- * Single
+ * Page
  * @template
  *
  * @package q_
