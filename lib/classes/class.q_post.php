@@ -91,6 +91,21 @@ if(!class_exists('q_post')) {
         }
 
         /**
+         * author
+         * Returning the author of the post
+         * This is the author code that came with the Underscores Wordpress theme.
+         * @return [ html ] [ author + author link]
+         */
+        public static function author() {
+            // Return the author
+            return sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
+                esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+                esc_html( get_the_author() )
+            );
+        }
+
+
+        /**
          * content
          * the_content() output with a customized read more
          * @return [ html ]         [ Returning a customized the_content() ]
@@ -123,6 +138,7 @@ if(!class_exists('q_post')) {
                 $id = get_the_ID();
             }
             // Defining the $date
+            $author = self::author();
             $date = self::publish_date( $id );
             /**
              * Defining the $output
@@ -130,7 +146,7 @@ if(!class_exists('q_post')) {
              * meta method might $output more than just the $date. Keeping
              * it open and flexible for change and customization.
              */
-            $output = $date;
+            $output = $author . ' &#183; ' . $date;
             // Returning / echoing the $output
             if( $echo === true ) {
                 echo $output;
