@@ -17,9 +17,7 @@
         <div class="entry-title">
             <!-- Post Title - Headline -->
             <h1>
-                <a href="<?php the_permalink(); ?>" rel="bookmark">
-                    <?php the_title(); ?>
-                </a>
+                <?php the_title(); ?>
             </h1>
         </div>
         <!-- Post Meta -->
