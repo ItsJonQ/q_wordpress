@@ -95,8 +95,14 @@ if(!class_exists('q_post')) {
             // Defining the header tag
             $header_tag = 'h2';
 
-            // Change the $header_tag to h1 if the $index is 1
-            if( $index === 1 ) {
+            // Change the $header_tag to h1 if
+            // $index === 1
+            // is_page()
+            // is_singular()
+            if( $index === 1 ||
+                is_page() ||
+                is_archive() ||
+                is_singular() ) {
                 $header_tag = 'h1';
             }
 
