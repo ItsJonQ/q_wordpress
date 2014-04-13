@@ -47,6 +47,31 @@ if(!class_exists('q_')) {
              */
         }
 
+        /**
+         * extend
+         * Method to extend settings / options (arrays)
+         * @param  [ array ] $base        [ the base/original array ]
+         * @param  [ array ] $replacement [ the replacement array ]
+         * @return [ array ]              [ the extended base array]
+         */
+        public static function extend( $base, $replacement = null ) {
+            // Return false if $base is invalid
+            if( !isset($base) || !is_array( $base ) ) {
+                return false;
+            }
+
+            // Return base if $replacement is not defined or if it's not valid
+            if( !$replacement || !is_array( $replacement ) ) {
+                return $base;
+            }
+
+            // Defining the $output
+            $output = array_replace_recursive( $base, $replacement );
+
+            // Returning the $output
+            $output;
+        }
+
     }
 
     // Initialize
