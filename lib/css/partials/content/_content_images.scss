@@ -1,0 +1,44 @@
+/**
+ * Images (Content)
+ * @partial
+ */
+
+.entry-content {
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .alignleft {
+        float: left;
+        margin-right: $gutter;
+        margin-bottom: $gutter-half;
+    }
+
+    .wp-caption {
+        max-width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .wp-caption-text {
+            background: $bg-color-light;
+            font-size: $font-size-smaller;
+            line-height: $line-height-base;
+            padding: 10px $gutter-half;
+        }
+    }
+}
+
+.entry-media-container.image {
+
+    .aligncenter {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+}

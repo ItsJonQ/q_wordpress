@@ -75,7 +75,7 @@ if(!class_exists('q_filter')) {
          * @param  [ string ] $args     [ type of media ]
          * @return [ html ]             [ the_content, filtered ]
          */
-        public static function content_media_replace_tag($content, $args) {
+        public static function content_media_replace_tag( $content, $args ) {
 
             // Return the $content if $args are not defined
             if( !isset($args) ) {
@@ -124,7 +124,7 @@ if(!class_exists('q_filter')) {
                 "\n";
 
             // Returning the $content with preg_replace
-            return preg_replace($filter, $output, $content);
+            return preg_replace( $filter, $output, $content );
         }
 
 
