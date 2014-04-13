@@ -69,7 +69,7 @@ if(!class_exists('q_')) {
             $output = array_replace_recursive( $base, $replacement );
 
             // Returning the $output
-            $output;
+            return $output;
         }
 
     }
@@ -79,5 +79,4 @@ if(!class_exists('q_')) {
 
     // Add Featured Image (post thumbnails)
     add_theme_support( 'post-thumbnails' );
-
 }
