@@ -14,9 +14,9 @@ html body {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   color: #777f89;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial";
+  font-family: "Domine", "Georgia", "Serif";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.65em;
 }
 html a {
@@ -49,7 +49,7 @@ html ::-moz-selection {
  */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 300;
+  font-weight: lighter;
   line-height: 1.2em;
   margin: 0 0 15px;
   padding: 0;
@@ -77,6 +77,10 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 0.85em;
+}
+
+p {
+  margin-bottom: 1.65em;
 }
 
 /**
@@ -172,7 +176,7 @@ h6, .h6 {
 }
 .featurette .headline {
   font-size: 56px;
-  font-weight: 300;
+  font-weight: lighter;
 }
 .featurette .sub-headline {
   line-height: 1.4em;
@@ -218,6 +222,7 @@ article .entry-header h1 a:hover, article .entry-header h2 a:hover, article .ent
 }
 article .entry-meta {
   color: #aeb2b8;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
   font-size: 0.85em;
   line-height: 1;
   margin-bottom: 15px;
@@ -232,6 +237,7 @@ article .entry-meta a:hover {
 }
 article .more-link {
   color: #3b9ca5;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
   font-size: 0.85em;
   line-height: 1;
   display: block;

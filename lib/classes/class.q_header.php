@@ -42,8 +42,18 @@ if( !class_exists( 'q_header') ) {
          * @return [ string ]
          */
         public static function custom_fonts() {
+
             // Defining the $output
-            $output = "\n" . "<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,400italic,700italic' rel='stylesheet' type='text/css'>" . "\n\n";
+            /**
+             * Source Sans Pro
+             */
+            // $output = "\n" . "<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,400italic,700italic' rel='stylesheet' type='text/css'>" . "\n\n";
+
+            /**
+             * Domine
+             */
+            $output = "\n" . "<link href='http://fonts.googleapis.com/css?family=Domine:400,700' rel='stylesheet' type='text/css'>" . "\n\n";
+
             // Echoing the output
             echo $output;
         }
