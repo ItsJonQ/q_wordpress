@@ -200,6 +200,7 @@ p {
   margin-bottom: 30px;
   height: 20em;
   position: relative;
+  overflow: hidden;
 }
 .featurette.cover .cover-link {
   position: absolute;
