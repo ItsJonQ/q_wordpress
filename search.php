@@ -49,7 +49,7 @@ $index = 0;
             else :
 
                 // Loading up the content template
-                    get_template_part( 'templates/content/content', 'none' );
+                get_template_part( 'templates/content/content', 'none' );
 
             endif; ?>
 

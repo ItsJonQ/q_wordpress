@@ -38,9 +38,8 @@ $index = 0;
 
         else :
 
-            /**
-             * No posts!
-             */
+            // Loading up the content template
+            get_template_part( 'templates/content/content', 'none' );
 
         endif; ?>
 
