@@ -8,6 +8,7 @@ article {
     .entry-header {
 
         @include headings {
+            color: $font-color-darker;
             font-weight: $font-weight-bold;
 
             a {

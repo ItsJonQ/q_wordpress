@@ -189,6 +189,7 @@ h6, .h6 {
  * @partial
  */
 article .entry-header h1, article .entry-header h2, article .entry-header h3, article .entry-header h4, article .entry-header h5, article .entry-header h6 {
+  color: #373d42;
   font-weight: 700;
 }
 article .entry-header h1 a, article .entry-header h2 a, article .entry-header h3 a, article .entry-header h4 a, article .entry-header h5 a, article .entry-header h6 a {
