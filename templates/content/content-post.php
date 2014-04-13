@@ -23,7 +23,7 @@ global $index;
         </div>
         <!-- Post Meta -->
         <div class="entry-meta">
-            <?php // echo k_post::meta(); ?>
+            <?php q_post::meta(); ?>
         </div>
 
     </header>
