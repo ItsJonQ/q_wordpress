@@ -43,6 +43,16 @@ article {
         }
     }
 
+    .entry-content {
+        blockquote,
+        pre,
+        dl,
+        ol,
+        ul,
+        table {
+            margin-bottom: $line-height-base;
+        }
+    }
 
     .entry-media-container {
         margin-bottom: $line-height-base;

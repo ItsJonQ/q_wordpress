@@ -260,6 +260,14 @@ article .entry-meta a:hover {
   color: #3b9ca5;
   text-decoration: underline;
 }
+article .entry-content blockquote,
+article .entry-content pre,
+article .entry-content dl,
+article .entry-content ol,
+article .entry-content ul,
+article .entry-content table {
+  margin-bottom: 1.65em;
+}
 article .entry-media-container {
   margin-bottom: 1.65em;
 }
@@ -333,6 +341,10 @@ article .entry-comments code {
   font-size: 20px;
   line-height: 1.8em;
   margin-bottom: 60px;
+}
+.single article .entry-content h1, .single article .entry-content h2, .single article .entry-content h3, .single article .entry-content h4, .single article .entry-content h5, .single article .entry-content h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+  font-weight: 400;
 }
 .single article .entry-media-container {
   margin-left: -15%;

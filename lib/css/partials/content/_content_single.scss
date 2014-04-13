@@ -21,6 +21,11 @@
             font-size: $font-size-base-plus;
             line-height: $line-height-base-plus;
             margin-bottom: $gutter-double;
+
+            @include headings {
+                font-family: $font-family-sans-serif;
+                font-weight: $font-weight-base;
+            }
         }
 
         .entry-media-container {
