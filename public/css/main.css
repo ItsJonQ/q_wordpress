@@ -199,6 +199,26 @@ p {
   background-repeat: no-repeat;
   margin-bottom: 30px;
   height: 20em;
+  position: relative;
+}
+.featurette.cover .cover-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+  background-color: transparent;
+  display: block;
+}
+.featurette.cover .cover-link:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
 }
 
 .single .featurette.cover {

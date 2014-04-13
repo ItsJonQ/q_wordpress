@@ -100,12 +100,18 @@ if(!class_exists('q_image')) {
 
         }
 
-        public static function featurette_cover( $id = null ) {
-            // Defining the $id if not defined
-            if( !$id ) {
-                global $post;
-                $id = $post->ID;
-            }
+        public static function featurette_cover( $options ) {
+            global $post;
+
+            // Defining the default $settings
+            $settings = array(
+                'permalink'     => false,
+                'title'         => false,
+                'id'            => $post->ID
+                );
+
+            // Extending the $settings
+            $settings = q_::extend( $settings, $options );
 
             /**
              * Defining the $featured_image using the get_thumbnail method
@@ -124,10 +130,23 @@ if(!class_exists('q_image')) {
                 return false;
             }
 
+            /**
+             * Making the cover linkable, if permalink is defined
+             */
+            $permalink = $settings['permalink'];
+            // If $permalink is set
+            if( $permalink ) {
+                // Create the permalink
+                $permalink = '<a href="'.$permalink.'" class="cover-link"></a>';
+            } else {
+                // Else null
+                $permalink = null;
+            }
+
             // Defining the cover
             $output = '
                 <!-- Featured Image: Cover -->
-                <section class="featurette section cover" style="background-image:url('.$featured_image.')"></section>
+                <section class="featurette section cover" style="background-image:url('.$featured_image.')">'.$permalink.'</section>
                 ';
 
             // Updating the classes status for has_featurette_cover
