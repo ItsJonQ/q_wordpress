@@ -220,6 +220,7 @@ pre {
   height: 20em;
   position: relative;
   overflow: hidden;
+  margin-bottom: -15px;
 }
 .featurette.cover .cover-link {
   position: absolute;
@@ -250,7 +251,7 @@ pre {
  * @partial
  */
 article {
-  margin-top: 30px;
+  margin-top: 45px;
   margin-bottom: 60px;
 }
 article .entry-header h1, article .entry-header h2, article .entry-header h3, article .entry-header h4, article .entry-header h5, article .entry-header h6 {
