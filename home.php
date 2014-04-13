@@ -33,6 +33,7 @@ $index = 0;
                 get_template_part( 'templates/content/content', 'post' );
             }
 
+            // Pagination
             q_post::pagination();
 
         else :

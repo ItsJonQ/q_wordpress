@@ -1,38 +1,61 @@
 <?php
 /**
- * The template for displaying Search Results pages.
+ * Search
+ * @template
  *
- * @package _s
+ * @package q_
  */
 
-get_header(); ?>
+get_header();
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+// Defining the $index for the post loop
+$index = 0;
+?>
 
-		<?php if ( have_posts() ) : ?>
+    <!-- Main Container -->
+    <div class="main-container" id="main-container">
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', '_s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+        <!-- Post List Container -->
+        <section class="post-container post-list" id="post-list">
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+        <?php
+        /**
+         * Getting the posts
+         */
+        if ( have_posts() ) : ?>
 
-				<?php get_template_part( 'content', 'search' ); ?>
+        <!-- Archive Page Header -->
+        <header class="page-header col-md-8 col-solo">
+            <!-- Archive Page Title -->
+            <h1 class="page-title">
+                <?php printf( __( 'Search Results for "<strong>%s</strong>"', '_s' ), '<span>' . get_search_query() . '</span>' ); ?>
+            </h1>
+        </header>
 
-			<?php endwhile; ?>
+        <?php
+            // Looping through the posts
+            while ( have_posts() ) {
+                // Defining the post info
+                the_post();
+                // Increasing the $index
+                $index++;
+                // Loading up the content template
+                get_template_part( 'templates/content/content', 'post' );
+            }
 
-			<?php _s_paging_nav(); ?>
+            // Pagination
+            q_post::pagination();
 
-		<?php else : ?>
+        else :
 
-			<?php get_template_part( 'content', 'none' ); ?>
+            /**
+             * No posts!
+             */
 
-		<?php endif; ?>
+        endif; ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+        </section>
 
-<?php get_sidebar(); ?>
+    </div>
+
 <?php get_footer(); ?>

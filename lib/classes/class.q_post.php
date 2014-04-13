@@ -227,7 +227,7 @@ if(!class_exists('q_post')) {
             ';
 
             // Returning / echoing
-            if( $echo = true ) {
+            if( $echo === true ) {
                 echo $output;
             } else {
                 return $output;
