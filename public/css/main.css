@@ -133,6 +133,32 @@ pre {
   margin: 30px auto 60px;
 }
 
+/**
+ * Buttons
+ * @partial
+ */
+.button {
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  background-color: whitesmoke;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+  line-height: 1;
+  font-size: 0.85em;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: #ebebeb;
+  text-decoration: none;
+}
+.button a:hover {
+  text-decoration: none;
+}
+
 .site-header {
   display: none;
 }
@@ -463,6 +489,30 @@ article .entry-comments .comment-respond .form-submit #submit:hover {
   margin-left: -15%;
   margin-right: -15%;
   width: 130%;
+}
+
+/**
+ * Pagination (Content)
+ * @partial
+ */
+.paging-navigation {
+  margin-bottom: 60px;
+}
+.paging-navigation .nav-links {
+  overflow: hidden;
+}
+.paging-navigation .nav-link {
+  padding: 0;
+}
+.paging-navigation .nav-link a {
+  display: inline-block;
+  padding: 10px 15px;
+}
+.paging-navigation .nav-previous {
+  float: left;
+}
+.paging-navigation .nav-next {
+  float: right;
 }
 
 /**

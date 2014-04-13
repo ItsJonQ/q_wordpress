@@ -1,0 +1,30 @@
+/**
+ * Pagination (Content)
+ * @partial
+ */
+
+.paging-navigation {
+    margin-bottom: $gutter-double;
+
+    .nav-links {
+        overflow: hidden;
+    }
+
+    .nav-link {
+        padding: 0;
+
+        a {
+            display: inline-block;
+            padding: 10px 15px;
+        }
+    }
+
+    .nav-previous {
+        float: left;
+    }
+
+    .nav-next {
+        float: right;
+    }
+
+}
