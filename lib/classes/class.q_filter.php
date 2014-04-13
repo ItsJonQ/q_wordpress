@@ -120,7 +120,7 @@ if(!class_exists('q_filter')) {
             // Defining the output
             $output = "\n".
                 '<!-- Post Article: Media -->' . "\n" .
-                '<div class="block-media-container '.$args['class'].'">'.$media.'</div>' .
+                '<div class="entry-media-container '.$args['class'].'">'.$media.'</div>' .
                 "\n";
 
             // Returning the $content with preg_replace
