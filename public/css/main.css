@@ -264,3 +264,10 @@ article .entry-comments code {
  * Post (Content)
  * @partial
  */
+/**
+ * Single (Content)
+ * @partial
+ */
+article .entry-content {
+  margin-bottom: 60px;
+}
