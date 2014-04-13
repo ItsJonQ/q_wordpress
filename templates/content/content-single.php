@@ -16,9 +16,7 @@
         <!-- Post Title -->
         <div class="entry-title">
             <!-- Post Title - Headline -->
-            <h1>
-                <?php the_title(); ?>
-            </h1>
+            <?php q_post::title(); ?>
         </div>
         <!-- Post Meta -->
         <div class="entry-meta">
