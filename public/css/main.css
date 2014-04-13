@@ -79,8 +79,24 @@ h6, .h6 {
   font-size: 0.85em;
 }
 
+blockquote {
+  padding: 0 20px;
+}
+
 p {
   margin-bottom: 1.65em;
+}
+
+pre {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border: none;
+  font-size: 14px;
+  line-height: 1.65em;
+  padding: 20px;
 }
 
 /**
