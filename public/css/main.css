@@ -1,24 +1,5 @@
 /**
  * Base
- * @module
- */
-/**
- * Mixins
- * @module
- */
-/**
- * Structure
- * @module
- */
-/**
- * Typography
- * @module
- */
-/**
- * Line Heights
- */
-/**
- * Base
  * @partial
  */
 html {
@@ -117,6 +98,15 @@ h6, .h6 {
 
 .col-right {
   float: right;
+}
+
+/**
+ * Footer
+ * @partial
+ */
+.site-footer {
+  text-align: center;
+  margin: 30px auto 60px;
 }
 
 .site-header {
