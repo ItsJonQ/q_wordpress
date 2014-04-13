@@ -217,7 +217,7 @@ if(!class_exists('q_post')) {
          */
         public static function tags( $echo = true ) {
             ob_start();
-            the_tags('<span class="tag-label">Tags</span>: <span class="hashtag">#</span>', '<span class="hashtag">#</span>', '<br />');
+            the_tags('<span class="tag-label">Tags:</span> <span class="tag"><span class="hashtag">#</span>', '</span><span class="tag"><span class="hashtag">#</span>', '</span></span>');
             $tags = ob_get_clean();
             $output = '
             <!-- Post Tags -->

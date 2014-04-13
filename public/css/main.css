@@ -363,8 +363,10 @@ article .entry-media-container.video iframe {
 }
 article .entry-tags .tag-label {
   color: #aeb2b8;
+  margin-right: 15px;
 }
-article .entry-tags a {
+article .entry-tags .tag {
+  display: inline-block;
   margin-right: 15px;
 }
 article .more-link {
