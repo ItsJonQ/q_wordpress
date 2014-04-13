@@ -209,6 +209,31 @@ if(!class_exists('q_post')) {
         }
 
 
+        /**
+         * tags
+         * Generating the tags for the post
+         * @param  boolean $echo    [ If false, return the $output instead of echo'ing it ]
+         * @return [ html ]         [ returning / echoing the tags ]
+         */
+        public static function tags( $echo = true ) {
+            ob_start();
+            the_tags('<span class="tag-label">Tags</span>: <span class="hashtag">#</span>', '<span class="hashtag">#</span>', '<br />');
+            $tags = ob_get_clean();
+            $output = '
+            <!-- Post Tags -->
+            <div class="entry-tags">
+                '.$tags.'
+            </div>
+            ';
+
+            // Returning / echoing
+            if( $echo = true ) {
+                echo $output;
+            } else {
+                return $output;
+            }
+        }
+
 
         /**
          * title

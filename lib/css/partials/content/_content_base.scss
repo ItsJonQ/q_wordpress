@@ -114,6 +114,17 @@ article {
     }
 
 
+    .entry-tags {
+        .tag-label {
+            color: $font-color-light;
+        }
+
+        a {
+            margin-right: 15px;
+        }
+    }
+
+
     .more-link {
         color: $link-color-main;
         font-family: $font-family-sans-serif;

@@ -37,6 +37,8 @@
 
         </div>
 
+        <?php q_post::tags(); ?>
+
     </article>
 
     <!-- Post Comments -->
