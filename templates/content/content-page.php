@@ -8,7 +8,11 @@
  */
 ?>
 
-<?php q_image::featurette_cover(); ?>
+<?php
+// Featurette Cover
+q_image::featurette_cover( array(
+    'permalink'     => get_permalink()
+) ); ?>
 
 <!-- Post Article Wrapper -->
 <div class="col-md-8 col-solo">

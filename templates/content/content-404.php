@@ -7,6 +7,7 @@
  * @package q_
  */
 ?>
+
 <!-- Post Article Wrapper -->
 <div class="col-md-8 col-solo">
 

@@ -11,7 +11,9 @@
 global $index;
 ?>
 
-<?php q_image::featurette_cover( array(
+<?php
+// Featurette Cover
+q_image::featurette_cover( array(
     'permalink'     => get_permalink()
 ) ); ?>
 
