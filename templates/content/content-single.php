@@ -10,9 +10,7 @@
 
 <?php
 // Featurette Cover
-q_image::featurette_cover( array(
-    'permalink'     => get_permalink()
-) ); ?>
+q_image::featurette_cover(); ?>
 
 <!-- Post Article Wrapper -->
 <div class="col-md-8 col-solo">
