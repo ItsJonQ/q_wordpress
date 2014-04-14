@@ -136,36 +136,75 @@ if(!class_exists('q_post')) {
 
         /**
          * meta
-         * @param  [number]  $id    [ Inserting the post's ID ]
+         * @param  [array] $options [ Method options ]
          * @param  boolean $echo    [ Determing whether to return or echo the $output ]
          * @return [ html ]         [ Returning the HTML from the publish_date method]
          */
-        public static function meta( $id = null, $echo = true ) {
-            // Getting the $id if the $id is not defined
-            if( !$id ) {
-                $id = get_the_ID();
-            }
-            // Defining the $date
-            $author = self::author();
-            $date = self::publish_date( $id );
-            $category = self::category();
+        public static function meta( $options ) {
+            // Defining the default settings
+            $settings = array(
+                'author'    => true,
+                'category'  => true,
+                'date'      => true,
+                'id'        => null,
+                'echo'      => true
+            );
+            $settings = q_::extend( $settings, $options );
+
             // Defining the separator
             $sep = ' <span class="sep">&#183;</span> ';
+
+            // Getting the $id if the $id is not defined
+            $id = null;
+            if( !$settings['id'] ) {
+                $id = get_the_ID();
+            }
+
+            // Defining the $author
+            if( $settings['author'] === true ) {
+                $author = self::author();
+            } else {
+                $author = null;
+            }
+
+            // Defining the $date
+            if( $settings['date'] === true ) {
+                $date = self::publish_date( $id );
+                $date = $sep . $date;
+            } else {
+                $date = null;
+            }
+
+            // Defining the $category
+            if( $settings['category'] === true ) {
+                $category = self::category();
+                $category = $sep . $category;
+            } else {
+                $category = null;
+            }
+
             /**
              * Defining the $output
              * The reason why it is currently $output = $date is because the
              * meta method might $output more than just the $date. Keeping
              * it open and flexible for change and customization.
              */
-            $output = $author . $sep . $date . $sep . $category;
+            $output = $author . $date . $category;
+
             // Returning / echoing the $output
-            if( $echo === true ) {
+            if( $settings['echo'] === true ) {
                 echo $output;
             } else {
                 return $output;
             }
         }
 
+        /**
+         * pagination
+         * Generates the previous and next pagination links
+         *
+         * @return [ html ] [ previous and next - pagination ]
+         */
         public static function pagination() {
             // Don't print empty markup if there's only one page.
             if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
@@ -182,30 +221,38 @@ if(!class_exists('q_post')) {
             echo $output;
         }
 
-        public static function previous_post() {
+        /**
+         * previous_next
+         * Generates and echos the previous and next posts. This method is
+         * primarily used in singular popsts
+         *
+         * @return [ html ] [ previous and next posts ]
+         */
+        public static function previous_next() {
             global $post;
             // Defining the previous post
             $prev_post = get_previous_post();
-            // Return false if $prev_post is empty
-            if( empty($prev_post) ) {
+            // Defining the next post
+            $next_post = get_next_post();
+            // Return false if $prev_post & $next_post is empty
+            if( empty($prev_post) && empty($next_post) ) {
                 return false;
             }
 
-            // Getting the previous post
-            $prev_post = get_posts( 'p='.$prev_post->ID );
-            // Looping through foreach loop from get_posts
-            foreach( $prev_post as $post ) :
-                // Setting up the post data for the template
-                setup_postdata( $post );
-                // Adding the attribute to check for previous/next usage in snippet template
-                $post->q_previous_next = 'previous';
-                // Loading the template
-                get_template_part( 'templates/content/content', 'snippet' );
-            endforeach;
-            // Resetting the post data
-            wp_reset_postdata();
+            // Creating an $args array for get_posts using next/prev IDs
+            $args = array( $prev_post->ID, $next_post->ID );
 
-            return true;
+            // Getting the posts
+            $post_data = get_posts( array( 'post__in' => $args ) );
+
+            // Loading the previous/next template
+            ob_start();
+            include( locate_template( 'templates/partials/previous-next.php' ) );
+            // Defining the $output
+            $output = ob_get_clean();
+
+            // Echoing the Template
+            echo $output;
 
         }
 

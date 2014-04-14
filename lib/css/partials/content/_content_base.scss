@@ -28,6 +28,10 @@ article {
 
     }
 
+    .entry-taxonomy {
+        margin-bottom: 5px;
+    }
+
     .entry-meta {
         color: $font-color-light;
         font-family: $font-family-sans-serif;
@@ -55,13 +59,30 @@ article {
         }
 
         .entry-category {
-            font-weight: bold;
+            font-size: 1em; // This resets the size to the same as .entry-meta
+        }
 
-            .space {
-                font-weight: $font-weight-base;
-            }
+    }
+
+
+    .entry-category {
+        color: $font-color-light;
+        font-family: $font-family-sans-serif;
+        font-size: $font-size-small;
+        line-height: 1;
+        margin-bottom: 1.5em;
+        font-weight: bold;
+
+        .sep {
+            margin: 0 5px;
+        }
+
+        .space {
+            margin: 0 5px;
+            font-weight: $font-weight-base;
         }
     }
+
 
     .entry-content {
         blockquote,
@@ -142,9 +163,3 @@ article {
     }
 }
 
-.entry-next-post {
-    @include headings {
-        font-family: $font-family-sans-serif;
-        font-weight: 300;
-    }
-}

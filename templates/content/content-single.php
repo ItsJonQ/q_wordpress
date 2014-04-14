@@ -48,7 +48,7 @@ q_image::featurette_cover( array(
 
 </div>
 
-<?php q_post::previous_post(); ?>
+<?php q_post::previous_next(); ?>
 
 <!-- Post Article Wrapper -->
 <div class="col-md-8 col-solo">

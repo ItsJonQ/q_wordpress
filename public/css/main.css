@@ -294,6 +294,9 @@ article .entry-header h1 a:hover, article .entry-header h2 a:hover, article .ent
   color: #3b9ca5;
   text-decoration: none;
 }
+article .entry-taxonomy {
+  margin-bottom: 5px;
+}
 article .entry-meta {
   color: #aeb2b8;
   font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
@@ -317,9 +320,21 @@ article .entry-meta .space {
   font-weight: 400;
 }
 article .entry-meta .entry-category {
+  font-size: 1em;
+}
+article .entry-category {
+  color: #aeb2b8;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+  font-size: 0.85em;
+  line-height: 1;
+  margin-bottom: 1.5em;
   font-weight: bold;
 }
-article .entry-meta .entry-category .space {
+article .entry-category .sep {
+  margin: 0 5px;
+}
+article .entry-category .space {
+  margin: 0 5px;
   font-weight: 400;
 }
 article .entry-content blockquote,
@@ -381,11 +396,6 @@ article .more-link {
 article .more-link:hover {
   color: #52b8c1;
   text-decoration: none;
-}
-
-.entry-next-post h1, .entry-next-post h2, .entry-next-post h3, .entry-next-post h4, .entry-next-post h5, .entry-next-post h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
-  font-weight: 300;
 }
 
 /**
@@ -532,6 +542,20 @@ article .more-link:hover {
 }
 .paging-navigation .nav-next {
   float: right;
+}
+
+/**
+ * Previous & Next (Content)
+ * @partial
+ */
+.entry-previous-next .entry-post-header h1, .entry-previous-next .entry-post-header h2, .entry-previous-next .entry-post-header h3, .entry-previous-next .entry-post-header h4, .entry-previous-next .entry-post-header h5, .entry-previous-next .entry-post-header h6 {
+  font-size: 1.6em;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+  font-weight: 300;
+}
+.entry-previous-next article {
+  border: none;
+  margin: 15px auto 30px;
 }
 
 /**
