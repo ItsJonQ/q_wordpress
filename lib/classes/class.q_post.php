@@ -174,12 +174,39 @@ if(!class_exists('q_post')) {
 
             ob_start();
             // Getting the pagination template
-            include(locate_template('templates/partials/pagination.php'));
+            include( locate_template( 'templates/partials/pagination.php' ) );
             // Defining the $output from the template
             $output = ob_get_clean();
 
             // Echoing the $output
             echo $output;
+        }
+
+        public static function previous_post() {
+            global $post;
+            // Defining the previous post
+            $prev_post = get_previous_post();
+            // Return false if $prev_post is empty
+            if( empty($prev_post) ) {
+                return false;
+            }
+
+            // Getting the previous post
+            $prev_post = get_posts( 'p='.$prev_post->ID );
+            // Looping through foreach loop from get_posts
+            foreach( $prev_post as $post ) :
+                // Setting up the post data for the template
+                setup_postdata( $post );
+                // Adding the attribute to check for previous/next usage in snippet template
+                $post->q_previous_next = 'previous';
+                // Loading the template
+                get_template_part( 'templates/content/content', 'snippet' );
+            endforeach;
+            // Resetting the post data
+            wp_reset_postdata();
+
+            return true;
+
         }
 
 
@@ -242,22 +269,31 @@ if(!class_exists('q_post')) {
          * @param  boolean $echo  [ If false, return the $output instead of echo'ing it ]
          * @return [ html ]       [ the title wrapped in a header tag ]
          */
-        public static function title( $index = 2, $echo = true ) {
-            // Defining the header tag
-            $header_tag = 'h2';
+        public static function title( $index = 2, $tag = null, $url = false, $echo = true ) {
 
-            // Change the $header_tag to h1 if
-            // $index === 1
-            // is_page()
-            // is_singular()
-            // BUT NOT
-            // is_archive()
-            if( ( $index === 1 ||
-                is_page() ||
-                is_singular() ) &&
-                !is_archive()
-                 ) {
-                $header_tag = 'h1';
+            // If $tag is not defined
+            if( !isset( $tag ) ) {
+
+                // Defining the header tag
+                $header_tag = 'h2';
+
+                // Change the $header_tag to h1 if
+                // $index === 1
+                // is_page()
+                // is_singular()
+                // BUT NOT
+                // is_archive()
+                if( ( $index === 1 ||
+                    is_page() ||
+                    is_singular() ) &&
+                    !is_archive()
+                     ) {
+                    $header_tag = 'h1';
+                }
+
+            } else {
+                // Set $header_tag as $tag
+                $header_tag = $tag;
             }
 
             // Defining the $title
@@ -265,8 +301,8 @@ if(!class_exists('q_post')) {
             // Defining the $permalink
             $permalink = get_permalink();
 
-            // Adjusting the title if the page is NOT singular
-            if( !is_singular() ) {
+            // Adjusting the title if the page is NOT singular or if $url is true
+            if( !is_singular() || $url === true ) {
                 $title = '<a href="'.$permalink.'" title="Read '.$title.'" rel="bookmark">'.$title.'</a>';
             }
             // Creating the headline

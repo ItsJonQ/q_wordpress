@@ -1,14 +1,31 @@
 <?php
 /**
- * Single (Content)
+ * Post (Content)
  * @template
  * @partial
  *
  * @package q_
  */
+
+// Getting the $index from the loop
+global $index;
 ?>
 
-<?php q_image::featurette_cover(); ?>
+<?php
+// If q_previous_next is defined, add the What's next label
+if($post->q_previous_next) : ?>
+<div class="col-md-8 col-solo">
+    <header class="entry-next-post">
+        <h4>What's Next</h4>
+    </header>
+</div>
+<?php endif; ?>
+
+<?php
+// Featurette Cover
+q_image::featurette_cover( array(
+    'permalink'     => get_permalink()
+) ); ?>
 
 <!-- Post Article Wrapper -->
 <div class="col-md-8 col-solo">
@@ -21,10 +38,11 @@
             <!-- Post Title -->
             <div class="entry-title">
                 <!-- Post Title - Headline -->
-                <?php q_post::title( $index ); ?>
+                <?php q_post::title( $index, 'h2', true ); ?>
             </div>
             <!-- Post Meta -->
             <div class="entry-meta">
+                <?php q_post::author(); ?>
                 <?php q_post::meta(); ?>
             </div>
 
@@ -33,32 +51,10 @@
         <!-- Post Content -->
         <div class="entry-content">
 
-            <?php the_content(); ?>
+            <?php the_excerpt(); ?>
 
         </div>
 
-        <?php q_post::tags(); ?>
-
-
     </article>
-
-</div>
-
-<?php q_post::previous_post(); ?>
-
-<!-- Post Article Wrapper -->
-<div class="col-md-8 col-solo">
-
-    <!-- Post Comments -->
-    <div class="entry-comments">
-
-    <?php
-        // If comments are open or we have at least one comment, load up the comment template
-        if ( comments_open() || '0' != get_comments_number() ) :
-            comments_template();
-        endif;
-    ?>
-
-    </div>
 
 </div>

@@ -383,6 +383,11 @@ article .more-link:hover {
   text-decoration: none;
 }
 
+.entry-next-post h1, .entry-next-post h2, .entry-next-post h3, .entry-next-post h4, .entry-next-post h5, .entry-next-post h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+  font-weight: 300;
+}
+
 /**
  * Comments (Content)
  * @partial
