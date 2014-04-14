@@ -14,6 +14,7 @@ global $index;
 <?php
 // If q_previous_next is defined, add the What's next label
 if($post->q_previous_next) : ?>
+<!-- Post Article - Next Post -->
 <div class="col-md-8 col-solo">
     <header class="entry-next-post">
         <h4>What's Next</h4>
