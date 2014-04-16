@@ -81,6 +81,11 @@
 
 
 .admin-bar {
+
+    #wpadminbar {
+        z-index: 99999999;
+    }
+
     .site-header {
         top: 32px;
     }

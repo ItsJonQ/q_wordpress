@@ -243,6 +243,9 @@ pre {
   color: #3b9ca5;
 }
 
+.admin-bar #wpadminbar {
+  z-index: 99999999;
+}
 .admin-bar .site-header {
   top: 32px;
 }
