@@ -41,7 +41,7 @@ html ::-moz-selection {
   color: #eeeeee;
 }
 html .page-container {
-  padding-top: 55px;
+  padding-top: 60px;
 }
 
 /**
@@ -163,29 +163,40 @@ pre {
 }
 
 .site-header {
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 999999;
-  height: 55px;
+  height: 60px;
   background: #fff;
   background-color: rgba(255, 255, 255, 0.8);
 }
+.site-header:hover {
+  background-color: white;
+}
+.site-header .container {
+  overflow: hidden;
+}
 .site-header .site-logo {
+  float: left;
   margin: 0px;
   width: 242px;
 }
 .site-header .site-logo a {
-  -webkit-transition: opacity 0.2s ease;
-  -moz-transition: opacity 0.2s ease;
-  -ms-transition: opacity 0.2s ease;
-  -o-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
   display: block;
   position: relative;
   padding: 0;
-  opacity: 1;
   text-transform: uppercase;
   font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
   font-weight: bold;
@@ -193,18 +204,43 @@ pre {
   overflow: hidden;
 }
 .site-header .site-logo a:hover {
-  opacity: 0.7;
   text-decoration: none;
+  color: #3b9ca5;
 }
 .site-header .site-logo img {
   display: block;
   border: none;
   float: left;
+  padding-top: 4px;
 }
 .site-header .site-logo .site-logo-name {
   float: left;
   display: block;
-  padding: 24px 20px 2px;
+  padding: 24px 20px 8px;
+}
+.site-header .site-navigation {
+  float: right;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+  font-weight: bold;
+  font-size: 0.85em;
+  line-height: 1;
+  color: #5c646e;
+}
+.site-header .site-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-header .site-navigation ul li {
+  display: inline-block;
+}
+.site-header .site-navigation ul li a {
+  display: block;
+  padding: 30px 10px 14px;
+}
+.site-header .site-navigation ul li a:hover {
+  text-decoration: none;
+  color: #3b9ca5;
 }
 
 .admin-bar .site-header {

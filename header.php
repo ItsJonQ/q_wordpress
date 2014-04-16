@@ -20,11 +20,18 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+    <!-- Page Container -->
     <div id="page" class="hfeed site page-container">
 
+        <!-- Site Header -->
         <header id="masthead" class="site-header" role="banner">
+            <!-- Header Container -->
             <div class="container">
+
+                <!-- Site Branding -->
                 <div class="site-branding">
+                    <!-- Site Logo -->
                     <div class="site-logo">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 
@@ -37,7 +44,24 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Site Navigation -->
+                <div class="site-navigation">
+
+                    <!-- Site Navigation Menu -->
+                    <nav id="site-navigation" class="main-navigation" role="navigation">
+                        <?php wp_nav_menu( array(
+                            'container'         => false,
+                            'menu_class'        => 'main-navigation-menu',
+                            'theme_location'    => 'primary'
+                            )
+                        ); ?>
+                    </nav>
+
+                </div>
+
             </div>
+
         </header>
         <!-- / #masthead -->
 
