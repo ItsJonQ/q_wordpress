@@ -1,0 +1,24 @@
+/**
+ * Tablet Responsive
+ * @responsive
+ */
+
+@media (min-width: 768px) {
+
+    .site-header {
+        .site-navigation {
+            display: block;
+        }
+    }
+
+    .admin-bar {
+        #wpadminbar {
+            display: block;
+        }
+
+        .site-header {
+            top: 32px;
+        }
+    }
+
+}

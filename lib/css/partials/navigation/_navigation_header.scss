@@ -6,6 +6,7 @@
     height: 60px;
     background: #fff;
     background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #eee;
 
     &:hover {
         background-color: rgba(255, 255, 255, 1);
@@ -52,6 +53,7 @@
     }
 
     .site-navigation {
+        display: none;
         float: right;
         font-family: $font-family-sans-serif;
         font-weight: bold;
@@ -83,10 +85,11 @@
 .admin-bar {
 
     #wpadminbar {
+        display: none;
         z-index: 99999999;
     }
 
     .site-header {
-        top: 32px;
+        top: 0px;
     }
 }

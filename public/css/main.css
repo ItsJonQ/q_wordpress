@@ -176,6 +176,7 @@ pre {
   height: 60px;
   background: #fff;
   background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #eee;
 }
 .site-header:hover {
   background-color: white;
@@ -219,6 +220,7 @@ pre {
   padding: 24px 20px 8px;
 }
 .site-header .site-navigation {
+  display: none;
   float: right;
   font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
   font-weight: bold;
@@ -244,10 +246,11 @@ pre {
 }
 
 .admin-bar #wpadminbar {
+  display: none;
   z-index: 99999999;
 }
 .admin-bar .site-header {
-  top: 32px;
+  top: 0px;
 }
 
 .section {
@@ -700,6 +703,10 @@ article .more-link:hover {
     line-height: 1.65em;
   }
 
+  .admin-bar .site-header {
+    top: 32px;
+  }
+
   .single article .entry-header h1 {
     font-size: 3.2em;
     letter-spacing: -1px;
@@ -715,5 +722,21 @@ article .more-link:hover {
   }
   .single article .entry-media-container.video {
     padding-top: 77%;
+  }
+}
+/**
+ * Tablet Responsive
+ * @responsive
+ */
+@media (min-width: 768px) {
+  .site-header .site-navigation {
+    display: block;
+  }
+
+  .admin-bar #wpadminbar {
+    display: block;
+  }
+  .admin-bar .site-header {
+    top: 32px;
   }
 }
