@@ -11,7 +11,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     // margin-bottom: $gutter;
-    height: 20em;
+    height: 0;
+    padding-top: 54.25%;
     position: relative;
     overflow: hidden;
     margin-bottom: -($gutter-half);
@@ -33,6 +34,6 @@
 // Adjusting the cover for singular pages
 .single {
     .featurette.cover {
-        height: 28em;
+        // height: 28em;
     }
 }

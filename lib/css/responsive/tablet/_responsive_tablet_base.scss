@@ -11,6 +11,17 @@
         }
     }
 
+    .featurette.cover {
+        padding: 0;
+        height: 24em;
+    }
+
+    .single {
+        .featurette.cover {
+            height: 28em;
+        }
+    }
+
     .admin-bar {
         #wpadminbar {
             display: block;

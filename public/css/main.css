@@ -333,7 +333,8 @@ pre {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 20em;
+  height: 0;
+  padding-top: 54.25%;
   position: relative;
   overflow: hidden;
   margin-bottom: -15px;
@@ -356,10 +357,6 @@ pre {
 .featurette.cover .cover-link:hover {
   background-color: rgba(0, 0, 0, 0.3);
   color: black;
-}
-
-.single .featurette.cover {
-  height: 28em;
 }
 
 /**
@@ -731,6 +728,15 @@ article .more-link:hover {
 @media (min-width: 768px) {
   .site-header .site-navigation {
     display: block;
+  }
+
+  .featurette.cover {
+    padding: 0;
+    height: 24em;
+  }
+
+  .single .featurette.cover {
+    height: 28em;
   }
 
   .admin-bar #wpadminbar {
