@@ -11,7 +11,7 @@
     <!-- Footer Container -->
     <footer class="col-md-8 col-solo site-footer" id="main-footer" role="contentinfo">
         <div class="site-info">
-            Q_ . 2014.
+            Built by <strong><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Q</a></strong> . 2014.
         </div><!-- / .site-info -->
     </footer><!-- / #main-footer -->
 
