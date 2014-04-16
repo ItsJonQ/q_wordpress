@@ -40,6 +40,9 @@ html ::-moz-selection {
   /* Firefox */
   color: #eeeeee;
 }
+html .page-container {
+  margin-top: 55px;
+}
 
 /**
  * Typography
@@ -160,7 +163,52 @@ pre {
 }
 
 .site-header {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999;
+  height: 55px;
+  background: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.site-header .site-logo {
+  margin: 0px;
+  width: 242px;
+}
+.site-header .site-logo a {
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -ms-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  display: block;
+  position: relative;
+  padding: 0 30px;
+  opacity: 1;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+  font-weight: bold;
+  color: #5c646e;
+  overflow: hidden;
+}
+.site-header .site-logo a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.site-header .site-logo img {
+  display: block;
+  border: none;
+  float: left;
+}
+.site-header .site-logo .site-logo-name {
+  float: left;
+  display: block;
+  padding: 24px 20px 2px;
+}
+
+.admin-bar .site-header {
+  top: 32px;
 }
 
 .section {

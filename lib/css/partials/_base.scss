@@ -34,4 +34,8 @@ html {
         background: rgba($q-color-main, 0.6); /* Firefox */
         color: $font-color-white;
     }
+
+    .page-container {
+        margin-top: 55px;
+    }
 }

@@ -20,15 +20,22 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div id="page" class="hfeed site">
+    <div id="page" class="hfeed site page-container">
 
         <header id="masthead" class="site-header" role="banner">
             <div class="site-branding">
-                <h1 class="site-title">
+                <div class="site-logo">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                        <?php bloginfo( 'name' ); ?>
+
+                        <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/lib/images/q-logo.png" alt="Jon Q">
+
+                        <span class="site-logo-name">
+                            <?php bloginfo( 'name' ); ?>
+                        </span>
+
                     </a>
-                </h1>
+                </div>
+
             </div>
         </header>
         <!-- / #masthead -->
