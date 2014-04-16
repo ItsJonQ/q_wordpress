@@ -412,7 +412,9 @@ article .more-link:hover {
   white-space: inherit;
 }
 .entry-comments textarea {
+  width: 100%;
   max-width: 100%;
+  padding: 15px;
 }
 .entry-comments ol {
   list-style: none;
