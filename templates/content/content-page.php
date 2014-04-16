@@ -30,7 +30,7 @@ q_image::featurette_cover(); ?>
         <!-- Post Content -->
         <div class="entry-content">
 
-            <?php q_post::content(); ?>
+            <?php the_content(); ?>
 
         </div>
 
