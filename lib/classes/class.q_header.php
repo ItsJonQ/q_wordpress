@@ -93,14 +93,17 @@ if( !class_exists( 'q_header') ) {
             $public = $dir . '/public/';
             $vendor = $dir . '/vendor/';
 
-           // Resources
+            // Resources
             wp_register_style( 'bootstrap', $vendor . 'css/bootstrap.min.css', array(), null);
 
+            wp_register_style( 'lil-b', $vendor . 'css/b.min.css', array(), null);
+
             // Main
-            wp_register_style( 'q-main', $public . 'css/main.css', array('bootstrap'), null);
+            wp_register_style( 'q-main', $public . 'css/main.css', array( 'bootstrap' , 'lil-b' ), null);
 
             // Enqueuing the styles
             wp_enqueue_style( 'bootstrap' );
+            wp_enqueue_style( 'lil-b' );
             wp_enqueue_style( 'q-main' );
         }
 
