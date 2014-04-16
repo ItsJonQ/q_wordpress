@@ -23,19 +23,20 @@
     <div id="page" class="hfeed site page-container">
 
         <header id="masthead" class="site-header" role="banner">
-            <div class="site-branding">
-                <div class="site-logo">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+            <div class="container">
+                <div class="site-branding">
+                    <div class="site-logo">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 
-                        <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/lib/images/q-logo.png" alt="Jon Q">
+                            <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/lib/images/q-logo.png" alt="Jon Q">
 
-                        <span class="site-logo-name">
-                            <?php bloginfo( 'name' ); ?>
-                        </span>
+                            <span class="site-logo-name">
+                                <?php bloginfo( 'name' ); ?>
+                            </span>
 
-                    </a>
+                        </a>
+                    </div>
                 </div>
-
             </div>
         </header>
         <!-- / #masthead -->

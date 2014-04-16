@@ -41,7 +41,7 @@ html ::-moz-selection {
   color: #eeeeee;
 }
 html .page-container {
-  margin-top: 55px;
+  padding-top: 55px;
 }
 
 /**
@@ -184,7 +184,7 @@ pre {
   transition: opacity 0.2s ease;
   display: block;
   position: relative;
-  padding: 0 30px;
+  padding: 0;
   opacity: 1;
   text-transform: uppercase;
   font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
