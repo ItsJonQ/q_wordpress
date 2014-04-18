@@ -739,7 +739,7 @@ article .more-link:hover {
     padding: 0;
   }
   .site-header .site-logo img {
-    height: auto;
+    height: 80px;
   }
   .site-header .site-logo .site-logo-name {
     padding-top: 24px;
