@@ -140,7 +140,7 @@ if(!class_exists('q_post')) {
          * @param  boolean $echo    [ Determing whether to return or echo the $output ]
          * @return [ html ]         [ Returning the HTML from the publish_date method]
          */
-        public static function meta( $options ) {
+        public static function meta( $options = array() ) {
             // Defining the default settings
             $settings = array(
                 'author'    => true,

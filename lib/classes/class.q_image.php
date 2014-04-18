@@ -40,7 +40,7 @@ if(!class_exists('q_image')) {
          * @param  [ array ] $options   [ array of options]
          * @return [ html / img]        [ returns an image tag ]
          */
-        public static function get_thumbnail( $options = null ) {
+        public static function get_thumbnail( $options = array() ) {
 
             global $post;
 
@@ -100,7 +100,7 @@ if(!class_exists('q_image')) {
 
         }
 
-        public static function featurette_cover( $options ) {
+        public static function featurette_cover( $options = array()) {
             global $post;
 
             // Defining the default $settings
