@@ -6,9 +6,31 @@
 @media (min-width: 768px) {
 
     .site-header {
+        height: 60px;
+
+        .container {
+            padding: 0;
+        }
+
+        .site-logo {
+
+            img {
+                height: auto;
+            }
+
+            .site-logo-name {
+                padding-top: 24px;
+            }
+        }
+
         .site-navigation {
             display: block;
         }
+
+    }
+
+    .page-container {
+        padding-top: 60px;
     }
 
     .featurette.cover {

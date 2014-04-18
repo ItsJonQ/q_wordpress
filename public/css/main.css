@@ -41,7 +41,7 @@ html ::-moz-selection {
   color: #eeeeee;
 }
 html .page-container {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 /**
@@ -173,7 +173,12 @@ pre {
   right: 0;
   left: 0;
   z-index: 999999;
-  height: 60px;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  height: 40px;
   background: #fff;
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #eee;
@@ -213,11 +218,12 @@ pre {
   border: none;
   float: left;
   padding-top: 4px;
+  height: 45px;
 }
 .site-header .site-logo .site-logo-name {
   float: left;
   display: block;
-  padding: 24px 20px 8px;
+  padding: 6px 20px 8px;
 }
 .site-header .site-navigation {
   display: none;
@@ -726,8 +732,24 @@ article .more-link:hover {
  * @responsive
  */
 @media (min-width: 768px) {
+  .site-header {
+    height: 60px;
+  }
+  .site-header .container {
+    padding: 0;
+  }
+  .site-header .site-logo img {
+    height: auto;
+  }
+  .site-header .site-logo .site-logo-name {
+    padding-top: 24px;
+  }
   .site-header .site-navigation {
     display: block;
+  }
+
+  .page-container {
+    padding-top: 60px;
   }
 
   .featurette.cover {
