@@ -33,6 +33,12 @@
         padding-top: 60px;
     }
 
+    .page-header {
+        .page-title {
+            font-size: $font-size-h1;
+        }
+    }
+
     .featurette.cover {
         padding: 0;
         height: 24em;

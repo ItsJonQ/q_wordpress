@@ -6,6 +6,10 @@
 .page-header {
     border: none;
     padding-bottom: 0;
+
+    .page-title {
+        font-size: $font-size-h4;
+    }
 }
 
 .page {
