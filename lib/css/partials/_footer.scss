@@ -6,4 +6,19 @@
 .site-footer {
     text-align: center;
     margin: $gutter auto $gutter-double;
+
+    .socials {
+        margin-bottom: $gutter-half;
+
+        // Icons
+        .icon {
+            color: $font-color-light;
+            padding: 0px 5px;
+
+            &:hover {
+                color: $q-color-main;
+                text-decoration: none;
+            }
+        }
+    }
 }

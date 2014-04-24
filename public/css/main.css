@@ -140,6 +140,17 @@ pre {
   text-align: center;
   margin: 30px auto 60px;
 }
+.site-footer .socials {
+  margin-bottom: 15px;
+}
+.site-footer .socials .icon {
+  color: #aeb2b8;
+  padding: 0px 5px;
+}
+.site-footer .socials .icon:hover {
+  color: #3b9ca5;
+  text-decoration: none;
+}
 
 /**
  * Buttons
@@ -800,7 +811,7 @@ article .more-link:hover {
     display: inline-block;
   }
   .site-header .site-navigation ul li a {
-    padding: 28px 10px 18px;
+    padding: 28px 10px 12px;
   }
 
   .page-container {
