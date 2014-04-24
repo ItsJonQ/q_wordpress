@@ -31,6 +31,37 @@ if( !class_exists( 'q_header') ) {
             add_action( 'wp_head' , array( 'q_header', 'custom_fonts' ) );
             // Adding custom meta
             add_action( 'wp_head' , array( 'q_header', 'meta_viewport' ) );
+
+            // Adding Analytics
+            add_action( 'wp_footer' , array( 'q_header', 'google_analytics' ) );
+        }
+
+        /**
+         * google_analytics
+         * Google Analytics Tracking
+         *
+         * @script
+         *
+         * @return [ string ]
+         */
+        public static function google_analytics() {
+
+            // Defining the $output
+            $output = "\n" . "
+                <!-- Google Analytics -->
+                <script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-50367408-1', 'jonquach.com');
+                  ga('send', 'pageview');
+
+                </script>" . "\n\n";
+
+            // Echoing the output
+            echo $output;
         }
 
         /**
