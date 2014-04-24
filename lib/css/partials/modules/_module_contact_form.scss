@@ -1,0 +1,18 @@
+/**
+ * Contact Form
+ * @partial
+ */
+
+.wpcf7 {
+    input,
+    textarea {
+        border: 1px solid $border-color-darker;
+        width: 100%;
+    }
+
+    input[type=submit] {
+        background-color: $q-color-main;
+        border: none;
+        color: #fff;
+    }
+}
