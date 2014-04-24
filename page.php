@@ -12,7 +12,7 @@ get_header(); ?>
     <div class="main-container" id="main-container">
 
         <!-- Post Container -->
-        <section class="post-container page-container">
+        <section class="post-container">
 
         <?php
         /**
