@@ -96,7 +96,7 @@ if( !class_exists( 'q_header') ) {
             // Resources
             wp_register_style( 'bootstrap', $vendor . 'css/bootstrap.min.css', array(), null);
 
-            wp_register_style( 'lil-b', $vendor . 'css/b.min.css', array(), null);
+            wp_register_style( 'lil-b', $vendor . 'css/b.css', array(), null);
 
             // Main
             wp_register_style( 'q-main', $public . 'css/main.css', array( 'bootstrap' , 'lil-b' ), null);

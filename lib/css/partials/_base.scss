@@ -15,10 +15,10 @@ html {
 
     a {
         @include transition(color 0.25s ease);
-        color: $font-color-main;
+        color: $q-color-main;
 
         &:hover {
-            color: lighten($font-color-main, 6);
+            color: lighten($q-color-main, 6);
         }
     }
 
@@ -35,7 +35,8 @@ html {
         color: $font-color-white;
     }
 
-    .page-container {
-        padding-top: 40px;
-    }
+}
+
+.page-container {
+    padding-top: 0px;
 }
