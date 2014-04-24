@@ -25,10 +25,10 @@ html a {
   -ms-transition: color 0.25s ease;
   -o-transition: color 0.25s ease;
   transition: color 0.25s ease;
-  color: #777f89;
+  color: #3b9ca5;
 }
 html a:hover {
-  color: #878e97;
+  color: #43b1bc;
 }
 html ::selection {
   background: rgba(59, 156, 165, 0.7);
@@ -40,8 +40,9 @@ html ::-moz-selection {
   /* Firefox */
   color: #eeeeee;
 }
-html .page-container {
-  padding-top: 40px;
+
+.page-container {
+  padding-top: 0px;
 }
 
 /**
@@ -104,6 +105,10 @@ pre {
 
 .hashtag {
   color: #3b9ca5;
+}
+
+.text-smaller {
+  font-size: 0.65em;
 }
 
 /**
@@ -693,6 +698,21 @@ article .more-link:hover {
 .entry-content table td,
 .entry-content table th {
   padding: 10px;
+}
+
+/**
+ * Contact Form
+ * @partial
+ */
+.wpcf7 input,
+.wpcf7 textarea {
+  border: 1px solid #dfdfdf;
+  width: 100%;
+}
+.wpcf7 input[type=submit] {
+  background-color: #3b9ca5;
+  border: none;
+  color: #fff;
 }
 
 /**
