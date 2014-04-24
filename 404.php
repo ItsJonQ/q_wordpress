@@ -12,7 +12,7 @@ get_header(); ?>
     <div class="main-container" id="main-container">
 
         <!-- Post Container -->
-        <section class="post-container page-container error-404 not-found">
+        <section class="post-container error-404 not-found">
 
             <?php get_template_part( 'templates/content/content', '404' ); ?>
 
