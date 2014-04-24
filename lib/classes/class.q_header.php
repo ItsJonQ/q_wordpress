@@ -132,6 +132,7 @@ if( !class_exists( 'q_header') ) {
             wp_register_style( 'bootstrap', $vendor . 'css/bootstrap.min.css', array(), null);
 
             wp_register_style( 'lil-b', $vendor . 'css/b.css', array(), null);
+            wp_register_style( 'icomoon', $vendor . 'css/icomoon.css', array(), null);
 
             // Main
             wp_register_style( 'q-main', $public . 'css/main.css', array( 'bootstrap' , 'lil-b' ), null);
@@ -139,6 +140,7 @@ if( !class_exists( 'q_header') ) {
             // Enqueuing the styles
             wp_enqueue_style( 'bootstrap' );
             wp_enqueue_style( 'lil-b' );
+            wp_enqueue_style( 'icomoon' );
             wp_enqueue_style( 'q-main' );
         }
 
