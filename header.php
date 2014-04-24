@@ -7,6 +7,28 @@
  */
 ?>
 <!DOCTYPE html>
+<!--
+
+            QQ
+           QQQ
+           Q
+            QQ
+          QQQQ
+       QQQQQQQ
+     QQQQQ QQQ
+     QQQ   QQQ
+     QQQ  QQQQ
+     QQQQQQQQQ
+     QQQQQ QQQ
+     QQQ   QQQ
+     Q     QQQ
+           QQQ
+           QQQ
+           QQ
+
+Oh, hello there!
+
+-->
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
