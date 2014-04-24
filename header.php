@@ -28,6 +28,17 @@
 
 Oh, hello there!
 
+Just in case you're wondering, this is a Wordpress powered site,
+and the theme is custom made.
+
+It's not available in any theme repo/store, but you can find the source here:
+https://github.com/ItsJonQ/q_wordpress
+
+It was built using the Underscores starter theme from the Automattic folks:
+http://underscores.me/
+
+:)
+
 -->
 <html <?php language_attributes(); ?>>
 <head>
