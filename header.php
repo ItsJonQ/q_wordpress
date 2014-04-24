@@ -26,42 +26,43 @@
 
         <!-- Site Header -->
         <header id="masthead" class="site-header" role="banner">
-            <!-- Header Container -->
-            <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Site Branding -->
+                        <div class="site-branding">
+                            <!-- Site Logo -->
+                            <div class="site-logo">
+                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 
-                <!-- Site Branding -->
-                <div class="site-branding">
-                    <!-- Site Logo -->
-                    <div class="site-logo">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                    <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/lib/images/q-logo.png" alt="Jon Q">
 
-                            <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/lib/images/q-logo.png" alt="Jon Q">
-
-                            <span class="site-logo-name">
-                                <?php bloginfo( 'name' ); ?>
-                            </span>
-
-                        </a>
+                                    <span class="site-logo-name">
+                                        <?php bloginfo( 'name' ); ?>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Site Navigation -->
-                <div class="site-navigation">
-
-                    <!-- Site Navigation Menu -->
-                    <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse site-navigation" id="bs-example-navbar-collapse-1">
                         <?php wp_nav_menu( array(
                             'container'         => false,
-                            'menu_class'        => 'main-navigation-menu',
+                            'menu_class'        => 'main-navigation-menu nav navbar-nav',
                             'theme_location'    => 'primary'
                             )
-                        ); ?>
-                    </nav>
-
-                </div>
-
-            </div>
-
+                            );
+                            ?>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
         </header>
         <!-- / #masthead -->
 

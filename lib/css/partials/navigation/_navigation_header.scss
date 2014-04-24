@@ -4,7 +4,7 @@
     @include transition(background-color 0.2s ease);
     @include position(fixed, 0, 0, false, 0, 999999);
     @include translateZ(0);
-    height: 40px;
+    height: 50px;
     background: #fff;
     background-color: rgba(255, 255, 255, 0.8);
     border-bottom: 1px solid #eee;
@@ -17,9 +17,38 @@
         overflow: hidden;
     }
 
+    .navbar-default {
+        background-color: transparent;
+        border: none;
+    }
+
+    .navbar-collapse {
+        border-top: none;
+    }
+
+    .navbar-toggle {
+        border-color: $border-color-main;
+
+        &:hover {
+            background-color: transparent;
+
+            .icon-bar {
+                background-color: $q-color-main;
+            }
+        }
+
+        &:focus {
+            background-color: transparent;
+        }
+
+        .collapsed {
+            background-color: transparent;
+        }
+    }
+
     .site-logo {
         float: left;
-        margin: 0px;
+        margin: 0px 0px 0px $gutter-half;
         width: 242px;
 
         a {
@@ -44,19 +73,21 @@
             border: none;
             float: left;
             padding-top: 4px;
-            height: 45px;
+            height: 46px;
         }
 
         .site-logo-name {
             float: left;
             display: block;
-            padding: 6px 20px 8px;
+            padding: 12px 20px 8px;
         }
     }
 
     .site-navigation {
-        display: none;
-        float: right;
+        // display: none;
+        // float: right;
+        border-bottom: 1px solid $border-color-darker;
+        background-color: #fff;
         font-family: $font-family-sans-serif;
         font-weight: bold;
         font-size: $font-size-small;
@@ -67,15 +98,16 @@
             @include list-unstyled;
 
             li {
-                display: inline-block;
+                display: block;
 
                 a {
                     display: block;
-                    padding: 30px 10px 14px;
+                    padding: $gutter-half;
 
                     &:hover {
+                        background-color: $q-color-light-bg;
                         text-decoration: none;
-                        color: $q-color-main;
+                        color: $link-color-hover;
                     }
                 }
             }

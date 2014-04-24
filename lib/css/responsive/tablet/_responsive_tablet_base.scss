@@ -24,7 +24,20 @@
         }
 
         .site-navigation {
+            border: none;
             display: block;
+            float: right;
+            background-color: transparent;
+
+            ul {
+                li {
+                    display: inline-block;
+
+                    a {
+                        padding: 28px 10px 18px;
+                    }
+                }
+            }
         }
 
     }
