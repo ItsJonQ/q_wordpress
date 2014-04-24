@@ -136,7 +136,7 @@ if(!class_exists('q_filter')) {
         public static function excerpt_read_more( $more ) {
             global $post;
             // Defining the $output (read more link)
-            $output = '<p><a class="read-more more-link" href="'. get_permalink( $post->ID ) . '"> Read More</a></p>';
+            $output = '...<br><p><a class="read-more more-link" href="'. get_permalink( $post->ID ) . '"> Read More</a></p>';
             // Returning the $output
             return $output;
         }
