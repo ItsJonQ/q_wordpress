@@ -11,7 +11,7 @@
     <!-- Footer Container -->
     <footer class="col-md-8 col-solo site-footer" id="main-footer" role="contentinfo">
         <div class="text-center socials">
-            <small class="text-smaller">Oh snap! You made it to the footer, <a href="https://www.youtube.com/watch?v=Rp7jp5H-xWU" target="_blank">like a boss</a></small>.
+            <small class="text-smaller">Oh snap! You made it to the footer, <strong>like a boss</strong></small>.
             <br>
             <small class="text-smaller">Find me on</small>
             <br>
